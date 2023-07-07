@@ -119,12 +119,12 @@
     let navBG = document.getElementById("nav");
     window.addEventListener('scroll',function(){
             let value = window.scrollY;
-            console.log(value);
-            pg1.style.left = value * 0.4 + 'px';
-            bg1.style.top = value * 0.2 + "px";
-            bg3.style.right = (value * 0.5)-300 + "px";
+            // console.log(value);
+            // pg1.style.left = value * 0.4 + 'px';
+            // bg1.style.top = value * 0.2 + "px";
+            // bg3.style.right = (value * 0.5)-300 + "px";
             navBG.style.backdropFilter = "blur(" + ((value*0.007 > 6)? 6 : (value*0.007)) + "px)";
-            navBG.style.backgroundColor = "RGBA(255,255,255," + ((value*0.007 > 0.8)? 0.8 : (value*0.07)) + ")";
+            navBG.style.backgroundColor = "RGBA(255,255,255," + ((value*0.007 > 0.3)? 0.3 : (value*0.07)) + ")";
         })
 </script>
 
