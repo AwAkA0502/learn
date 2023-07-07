@@ -1,0 +1,782 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "montserrat";
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    background-size: cover;
+    background-color: #E8F6EF;
+}
+#bg1{
+    width: 1920px;
+}
+
+.container {
+    width: 100vw;
+    height: 3100px;
+}
+.container .bagian1{
+    width: 100vw;
+    height: 810px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#pg1{
+    max-width: 700px;
+    position: relative;
+}
+
+nav{
+    z-index: 100;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    top: 0;
+    right: 0;
+    padding: 28px 5%;
+    transition: all .50s ease;
+}
+
+.learn {
+    color: transparent;
+}
+
+.logo img{
+    z-index: 100;
+    position: fixed;
+    margin: 20px 60px;
+    height: 80px;
+}
+    
+nav a{
+    font-weight: 800;
+    font-size: 30px;
+}
+.nav1{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.nav1 li a{
+    color: #323232;
+    padding: 5px 0;
+    margin-left: 20px ;
+}
+.signlog {
+    display: flex;
+}
+.signlog a{
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.signlog a .login{
+    color: #E8F6EF;
+    font-size: 25px;
+    background-color: #1B9C85;
+    padding: 15px 25px;
+    border-radius: 40px;
+}
+
+.signlog a .signup{
+    color: #323232;
+    border : 2px solid #323232;
+    font-size: 25px;
+    padding: 15px 25px;
+    border-radius: 40px;
+}
+
+#menu{
+    display: none;
+    color:#323232;
+    padding-left: 20px;
+    font-weight: 900;
+    font-size: 50px;
+}
+
+
+.nav1 li a{
+    text-decoration: none;
+}
+
+.container1{
+    margin: 100px;
+}
+
+.container1 h1{
+    color: rgb(44, 44, 44) ;
+    font-size: 69px;
+    font-weight:900;
+}
+
+.container1 .h2{
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+.container1 .h2 span{
+    font-size: 20px;
+    font-weight:550;
+}
+.container1 .moreinfo{
+    font-size: 30px;
+    font-weight: 700;
+    background-color: #1B9C85;
+    padding: 22px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 60px;
+    text-decoration: none;
+    color: white;
+}
+
+.bagian2{
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    display: flex;
+    width: 100vw;
+    height: 610px;
+}
+.bagian2 img{
+    position: relative;
+    float: left;
+    max-width: 520px;
+}
+
+.bagian2 .aboutus{
+    margin-left: 120px;
+    float: right;
+    max-width: 720px;
+}
+
+.bagian2 .aboutus h1{
+    color: #4C4C6D;
+    font-size: 100px;
+}
+.bagian2 .aboutus span{
+    color: rgb(44, 44, 44);
+    font-size: 25px;
+    font-weight: 600;
+}
+
+#ab1{
+    display: none;
+}
+
+.bagian3{
+    width: 100vw;
+    height: 830px;
+}
+.bagian3 #bg3{
+    position: absolute;
+    padding-top: 150px;
+    right: 100px;
+    z-index: -2;
+}
+.bagian3 .pilihan1 img{
+    display: none;
+}
+
+.bagian3 .pilihan2 img{
+    display: none;
+}
+.bagian3 h1{
+    padding-top: 100px ;
+    color: #4C4C6D;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+}
+.bagian3 ul{
+    padding-top: 30px;
+    justify-content: space-around;
+    display: flex;
+}
+
+.bagian3 ul .pilihan1{
+    height: 514px;
+    width: 416px;
+    background-color: #1B9C85;
+    border-radius: 50px;
+    transition: 1s;
+}
+.bagian3 ul .pilihan1:hover{
+    transform: scale(1.1);
+    z-index: 2;
+}
+.bagian3 ul .pilihan1::before{
+    content: url("arus listrik gambar.png");
+    position: relative;
+    float: right;
+    padding-top: 55px;
+    padding-right: 55px;
+    padding-left: 55px;
+}
+
+
+.bagian3 ul .pilihan1 .arus{
+    width: 200px;
+    font-size: 30px;
+    font-weight: 700;
+    position: relative;
+    top: 20px;
+    left: 110px;
+    color: #FFE194;
+}
+.bagian3 ul .pilihan1 a{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px; ;
+    background-color: #4C4C6D;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 700;
+    position: relative;
+    float: right;
+    right: 30px;
+    top: 170px;
+    text-decoration: none;
+    color: white;
+}
+
+
+.bagian3 ul .pilihan2{
+    height: 514px;
+    width: 416px;
+    background-color: #1B9C85;
+    border-radius: 50px;
+    transition: 1s;
+}
+
+.bagian3 ul .pilihan2:hover{
+    transform: scale(1.1);
+    z-index: 2;
+}
+.bagian3 ul .pilihan2::before{
+    content: url("arus listrik gambar.png");
+    position: relative;
+    float: right;
+    padding-top: 55px;
+    padding-right: 55px;
+    padding-left: 55px;
+}
+
+
+.bagian3 ul .pilihan2 .arus{
+    width: 400px;
+    font-size: 30px;
+    font-weight: 700;
+    position: relative;
+    top: 20px;
+    left: 50px;
+    color: #FFE194;
+}
+.bagian3 ul .pilihan2 a{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px; ;
+    background-color: #4C4C6D;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 700;
+    position: relative;
+    float: right;
+    right: 30px;
+    top: 120px;
+    text-decoration: none;
+    color: white;
+}
+
+.bagian4{
+    width: 100vw;
+    height: 850px;
+    background-color: #4C4C6D;
+    background-image: url("bg4.png");
+    background-repeat: no-repeat;
+    background-size: 750px;
+    background-position-x: 100%;
+}
+
+.bagian4 ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.bagian4 ul .bagian1{
+    margin: 50px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+}
+.bagian4 ul .bagian1 .logo{
+    font-size: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.bagian4 ul .bagian1 h1{
+    color: #FFE194;
+    font-size: 50px;
+    font-weight: 800;
+}
+.bagian4 ul .bagian1 span{
+    width: 50vw;
+    font-weight: 600;
+    color:white;
+    padding-bottom: 30px;
+}
+
+.bagian4 ul .bagian2{
+    display: flex;
+    flex-direction: row;
+    width: 18%;
+}
+
+.bagian4 ul .bagian2 li{
+    font-size: small;
+    padding: 60px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+input[type="text"] {
+    font-size: 20px;
+    color: #323232;
+    height: 40px;
+    width: 70%;
+    padding: 20px ;
+    border: 1px solid rgba(204, 204, 204, 0);
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    width: 200px;
+    background-color: #FFE194;
+    color: rgb(48, 48, 48);
+    padding: 20px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 26px;
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+input[type="submit"]:hover {
+    background-color: #1B9C85;
+    color: #FFE194;
+}
+
+@media screen and (max-width:450px) {
+    body{
+        overflow-x: none;
+    }
+    nav {
+        left: 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        transition: top 0.3s;
+        padding-bottom: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        z-index: 10;
+        backdrop-filter: blur(0px);
+    }
+    .nav1{
+        font-size: 20px;
+        border-radius: 30px;
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 200px;
+        height: 60vh;
+        background-color: #1B9C85;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: all .50s ease;
+    }
+    .nav1 li a{
+        font-size: 25px;
+        display: block;
+        margin: 12px 0;
+        padding: 0px 25px;
+        transition: all .50s ease;
+    }
+
+    .nav1 .open{
+        right: 2%;
+    }
+    .logo img{
+        margin: 20px 20px;
+        height: 45px;
+    }
+    .signlog a {
+        margin-left: 5px;
+    }
+    .signlog a .login{
+        color: #E8F6EF;
+        font-size: 10px;
+        background-color: #1B9C85;
+        padding: 5px 15px;
+        border-radius: 40px;
+    }
+    
+    .signlog a .signup{
+        color: #323232;
+        border : 2px solid #323232;
+        font-size: 10px;
+        padding: 5px 10px;
+        border-radius: 40px;
+    }
+    #menu {
+        font-size: 20px;
+        display: block;
+    }
+    .container .bagian1{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 650px;
+    }
+    .bagian1 #pg1{
+        display: none;
+    }
+    .container{
+        background-image: url("pg1.1.png");
+        background-size: 580px;
+        background-position-x: -50px;
+        background-position-y: -50px; ;
+        background-repeat: no-repeat;
+        display: block;
+    }
+    .container1{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #pg1{
+        display: none;
+    }
+    .container1 h1{
+        color: rgb(44, 44, 44) ;
+        font-size: 49px;
+        font-weight:900;
+    }
+    
+    .container1 .h2{
+        padding-top: 10px;
+        width: 320px;
+    }
+    .container1 .h2 span{
+        font-size: 20px;
+        font-weight:550;
+    }
+
+    .container1 .moreinfo{
+        font-size: 20px;
+        font-weight: 700;
+        background-color: #1B9C85;
+        border-radius: 60px;
+        text-decoration: none;
+        color: white;
+    }
+    .bagian2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        height: 631px;
+        width: 100vw;
+    }
+    .bagian2 img{
+        margin: 0;
+        max-width: 300px;
+    }
+
+    #ab1{
+        display: block;
+        font-size: 50px;
+        font-weight: 760;
+    }
+    .bagian2 .aboutus{
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0px;
+        float: right;
+        max-width: 350px;
+    }
+    #ab1{
+        font-size: 70px;
+        color: #4C4C6D;
+    }
+    .bagian2 .aboutus h1{
+        color: #4C4C6D;
+        font-size: 90px;
+        display: none;
+    }
+    .bagian2 .aboutus span{
+        text-align: center;
+        color: rgb(44, 44, 44);
+        font-size: 15px;
+        font-weight: 800;
+    }
+    
+    .bagian3{
+        display: block;
+        width: 100vw;
+        height: 530px;
+        background-image: url("pg1.2.png");
+        background-size: 600px;
+        background-position-y: 225px ;
+        background-position-x: -50px ;
+        background-repeat: no-repeat;
+    }
+
+    .bagian3 #bg3{
+        display: none;
+    }
+
+    .bagian3 h1{
+        padding-top: 100px ;
+        color: #4C4C6D;
+        font-size: 60px;
+        font-weight: 800;
+        display: flex;
+        justify-content: center;
+    }
+    .bagian3 ul{
+        padding-top: 30px;
+        justify-content: space-around;
+        display: flex;
+    }
+    
+    .bagian3 ul .pilihan1{
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+        height: 214px;
+        width: 156px;
+        background-color: #1B9C85;
+        border-radius: 20px;
+        transition: 1s;
+    }
+    .bagian3 ul .pilihan1 img{
+        display: block;
+        padding-top: 20px;
+        z-index: 20;
+        max-width: 120px;
+    }
+    .bagian3 ul .pilihan1:hover{
+        transform: scale(1.1);
+        z-index: 2;
+    }
+    .bagian3 ul .pilihan1::before{
+        display: none;
+    }
+    
+    
+    .bagian3 ul .pilihan1 .arus{
+        font-size: 20px;
+        left: 40px;
+        top: 10px;
+        color: #FFE194;
+        z-index: 20;
+    }
+    .bagian3 ul .pilihan1 a{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px; ;
+        background-color: #4C4C6D;
+        border-radius: 50px;
+        font-size: 10px;
+        font-weight: 700;
+        position: relative;
+        float: right;
+        left: 25px;
+        top: 55px;
+        text-decoration: none;
+        color: white;
+    }
+    
+    
+    .bagian3 ul .pilihan2{
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+        height: 214px;
+        width: 156px;
+        background-color: #1B9C85;
+        border-radius: 20px;
+        transition: 1s;
+    }
+
+    .bagian3 ul .pilihan2 img{
+        display: block;
+        padding-top: 20px;
+        z-index: 20;
+        max-width: 120px;
+    }
+    
+    .bagian3 ul .pilihan2:hover{
+        transform: scale(1.1);
+        z-index: 2;
+    }
+    .bagian3 ul .pilihan2::before{
+        display: none;
+    }
+    
+    
+    .bagian3 ul .pilihan2 .arus{
+        font-size: 12px;
+        left: 135px;
+        top: 10px;
+        color: #FFE194;
+        z-index: 20;
+    }
+    .bagian3 ul .pilihan2 a{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px; ;
+        background-color: #4C4C6D;
+        border-radius: 50px;
+        font-size: 10px;
+        font-weight: 700;
+        position: relative;
+        float: right;
+        left: 25px;
+        top: 50px;
+        text-decoration: none;
+        color: white;
+    }
+
+    .bagian4{
+        width: 100vw;
+        height: 850px;
+        background-color: #4C4C6D;
+        background-image: none;
+        background-repeat: no-repeat;
+        background-size: 750px;
+        background-position-x: 100%;
+    }
+    
+    .bagian4 ul{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+    }
+    
+    .bagian4 ul .bagian1{
+        margin: 30px;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+    .bagian4 ul .bagian1 .logo{
+        padding-top: 20px;
+        display: flex;
+        font-size: 40px;
+        padding-bottom: 20px;
+    }
+    .bagian4 ul .bagian1  h1{
+        color: #FFE194;
+        font-size: 30px;
+        font-weight: 800;
+    }
+    .bagian4 ul .bagian1 span{
+        display: none;
+        width: 50vw;
+        font-weight: 600;
+        color:white;
+    }
+    
+    .bagian4 ul .bagian2{
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        width: 25vw;
+    }
+    
+    .bagian4 ul .bagian2 li{
+        max-width: 155px;
+        padding-top: 20px;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    
+    .bagian4 ul .bagian2 h1{
+        font-size: 50px;
+        font-weight: 900;
+    }
+    
+    .bagian12{
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 30%;
+    }
+    
+    input[type="text"] {
+        font-size: 20px;
+        color: #323232;
+        height: 40px;
+        width: 85%;
+        padding: 20px ;
+        border: 1px solid rgba(204, 204, 204, 0);
+        background-color: #ffffff;
+        border-radius: 20px;
+        box-sizing: border-box;
+    }
+    
+    input[type="submit"] {
+        width: 200px;
+        background-color: #FFE194;
+        color: rgb(48, 48, 48);
+        padding: 10px 0px;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        font-size: 26px;
+        font-weight: 700;
+        transition: 0.5s;
+    }
+    
+    input[type="submit"]:hover {
+        background-color: #1B9C85;
+        color: #FFE194;
+    }
+    
+}

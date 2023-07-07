@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <a href="#" class="logo"><img src="logo.png"></a>
+    <nav id="nav" style="background-color: rgba(255, 255, 255, 0);">
+        <a href="#" class="learn">LEARN</a>
+        <div class="nav1" id="nav1">
+            <li><a href="#bagian1">Home</a> </li>
+            <li><a href="#bagian2">About</a> </li>
+            <li><a href="#bagian3">Materi</a> </li>
+            <li><a href="#bagian4">Contact</a> </li>
+        </div>
+        <div class="signlog">
+            <a href="dasboard.html"><div class="signup">Sign Up</div></a></li>
+            <a href="dasboard.html"><div class="login">login</div></a></li>
+            <i class="ri-menu-fill" id="menu"></i>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="bagian1" id="bagian1">
+            <img src="pg1.1.png" id="pg1">
+            <div class="container1" id="container1">
+                    <h1>WEBSITE BELAJAR <br>MENARIK DAN<br> DIMENGERTI</h1>
+                    <div class="h2">
+                    <span id="da1">Tempat belajar yang mempunyai tampilan menarik<br> 
+                        dan mudah untuk dimengerti pelajar mengenai<br> 
+                        mata pelajaran umum.</span>
+                        </div>
+                    <a href="dasboard.html" class="moreinfo">More Info</a>  
+            </div>
+        </div>
+        <div class="bagian2" id="bagian2">
+            <h1 id="ab1">About us</h1>
+            <div class="gambar2">
+                <img src="gambar character.png" id="abgmbr">
+            </div>
+            <div class="aboutus">
+                <h1>About us</h1>
+                <span>Selamat datang di Learn. Kami adalah Mahasiswa
+                    Semester 2 yang ingin membuat sebuah tempat 
+                    belajar yang cocok bagi para pelajar. Learn bisa 
+                    kalian akses di manapun dan kapanpun.
+                    Learn juga mempunyai alur belajar bagi pelajar.
+
+                    Kami ingin memberikan kalian pengalaman belajar
+                    yang bermanfaat dan inovatif. Learn juga mempunyai 
+                    tampilan antarpengguna yang nyaman dilihat bagi 
+                    para pelajar.</span>
+            </div>
+        </div>
+        <div class="bagian3" id="bagian3">
+            <img src="pg1.2.png" id="bg3"> 
+            <h1>MATERI</h1>
+            <ul>
+                <div class="pilihan1">
+                    <img src="arus listrik gambar.png" id="alg">
+                    <div class="arus">Arus Listrik</div>
+                    <a href="arus listrik.html"><div class="moreinfo">More info</div></a>
+                </div>
+                <div class="pilihan2">
+                    <img src="hambatan listrik.png" id="hlg">
+                    <div class="arus">Hambatan Dan Arus <br> Listrik</div>
+                    <a href="pagesoal.html"><div class="moreinfo">More info</div></a>
+                </div>
+            </ul>
+        </div>
+        <div class="bagian4" id="bagian4">
+            <ul>
+                <div class="bagian1">
+                        <h1>CONTACT US</h1>
+                        <div class="logo">
+                            <i class="ri-instagram-fill"></i>
+                            <i class="ri-facebook-fill"></i>
+                            <i class="ri-twitter-fill"></i>
+                            <i class="ri-instagram-fill"></i>
+                            <i class="ri-tiktok-fill"></i>
+                        </div>
+                        <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                            Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, 
+                            purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. 
+                            Fusce est. Vivamus a tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada 
+                            fames ac turpis egestas.</span>
+
+                        <li><input type="text" id="nama" name="nama" class="inputan" value="Nama"><br><br></li>
+                        <li><input type="text" id="email" name="emmail" class="inputan2" value="email"><br><br></li>
+                        <li><input type="text" id="massage" name="massage" class="inputan3" value="massage"><br><br></li>
+                        <input type="submit" value="SEND">
+                <div class="bagian2">
+                    <li><i class="ri-mail-fill"></i><span id="mail">cs@learnservice.com</span></li>
+                    <li><i class="ri-phone-fill"></i><span id="telpon">(021) 78940234</span></li>
+                    <li><i class="ri-building-fill"></i><span id="gedung">jl.Cut mutia no 14</span></li>
+                    <li><i class="ri-time-fill"></i><span id="jam">08.00 - 20-00</span></li>
+                </div>
+            </ul>
+        </div>
+    </div>
+    
+
+<script>
+    let menu = document.querySelector('#menu');
+    let navbar = document.querySelector('.nav1');
+
+    menu.onclick = () => {
+        menu.classlist.toggle('ri-menu-fill');
+        navbar.classlist.toggle('open');
+    }
+    let bg = document.getElementById("bg1");
+    let pg1 = document.getElementById("pg1");
+    let bg3 = document.getElementById("bg3");
+    let navBG = document.getElementById("nav");
+    window.addEventListener('scroll',function(){
+            let value = window.scrollY;
+            console.log(value);
+            pg1.style.left = value * 0.4 + 'px';
+            bg1.style.top = value * 0.2 + "px";
+            bg3.style.right = (value * 0.5)-300 + "px";
+            navBG.style.backdropFilter = "blur(" + ((value*0.007 > 6)? 6 : (value*0.007)) + "px)";
+            navBG.style.backgroundColor = "RGBA(255,255,255," + ((value*0.007 > 0.8)? 0.8 : (value*0.07)) + ")";
+        })
+</script>
+
+</body>
+</html>

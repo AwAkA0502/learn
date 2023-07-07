@@ -1,0 +1,369 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "montserrat";
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    background-size: cover;
+    background-color: #E8F6EF;
+}
+nav{
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: top 0.3s;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 10;
+    backdrop-filter: blur(8px);
+}
+
+nav .logo img {
+    padding-left: 50px;
+    height: 80px;
+}
+.nav1{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 40%;
+    padding-top: 30px;
+    margin-right: -55px;
+}
+.nav1 li a {
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(44, 44, 44);
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 18%;
+    padding-top: 20px;
+    padding-right: 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(44, 44, 44);
+}
+.signup{
+    border-style: solid;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.login{
+    background-color: #1B9C85;
+    padding: 12px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 30px;
+}
+
+.hambatan{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 120px;
+}
+.hambatan ul{
+    font-weight: 600;
+    color: #1B9C85;
+}
+.hambatan h1 {
+    font-size: 60px;
+}
+.hambatan span {
+    font-size: 20px;
+    padding-top: 30px;
+}
+.rangse {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rangse .rurangse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.rangse .rurangse h1{
+    font-size: 60px;
+}
+.rangse .rurangse ul{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rangse .rurangse ul li{
+    font-weight: 600;
+    color: #1B9C85;
+}
+.rangse .rurangse img{
+    padding-top: 30px;
+    padding-right: 60px;
+    color: #1B9C85;
+}
+
+.rangse span{
+    padding-left: 60px;
+    margin: 50px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.rangrel {
+    display: flex;
+    flex-direction: column;
+}
+
+.rangrel .rurangrel {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+.rangrel .rurangrel h1 {
+    font-size: 60px;
+    font-weight: 800;
+}
+
+.rangrel .rurangrel img {
+    width: 700px;
+}
+
+.rangrel .rurangrel ul li{
+    color: #1B9C85;
+    font-weight: 600;
+}
+
+.rangrel span{
+    padding-left: 60px;
+    margin: 50px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.pengarus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pengarus h1 {
+    font-size: 60px;
+    color: #4C4C6D;
+}
+.pengarus span {
+    padding-top: 30px ;
+    text-align: justify;
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: 60px ;
+    margin-right: 60px ;
+}
+
+.pengkapa {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pengkapa h1 {
+    color: #4C4C6D;
+    font-size: 60px;
+}
+
+.pengkapa span{
+    padding-top: 30px ;
+    text-align: justify;
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: 60px ;
+    margin-right: 60px ;
+}
+
+.rumkap {
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    margin-top: 30px;
+}
+
+.rumkap h1{
+    font-size: 60px;
+    color: #4C4C6D;
+}
+
+.rumkap span{
+    font-size: 30px;
+}
+
+.rumkap ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rumkap ul li {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600 ;
+    color: #1B9C85;
+}
+
+.rumkap ul li img{
+    width: 500px;
+    padding-top: 30px ;
+    padding-bottom: 50px;
+}
+
+.rumkap .rumkap2{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.rumkap .rumkap2 #rk{
+    width: 500PX;
+}
+
+.rumkap span {
+    padding-top: 20px;
+    font-size: 25px;
+    color: #1B9C85;
+}
+
+.rumkap .rumkap3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.rumkap .rumkap3 #rk3{
+    width: 400px;
+}
+
+.pengdie {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+}
+
+.pengdie h1{
+    font-size: 60px;
+    color: #4C4C6D;
+}
+
+.pengdie span{
+    text-align: justify;
+    padding-top: 10px ;
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: 60px ;
+    margin-right: 60px ;
+}
+
+.kardie {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+}
+
+.kardie h1{
+    font-size: 60px;
+    color: #4C4C6D;
+}
+
+.kardie ol li{
+    text-align: justify;
+    padding-top: 10px ;
+    font-size: 30px;
+    font-weight: 600;
+    padding-right: 70px;
+}
+
+.jendie {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 60px;
+}
+
+.jendie h1{
+    font-size: 60px;
+    color: #4C4C6D;
+}
+.jendie ol li{
+    text-align: justify;
+    padding-top: 10px ;
+    font-size: 30px;
+    font-weight: 600;
+    padding-right: 70px;
+}
+
+.raedi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+}
+
+.raedi h1{
+    font-size: 60px;
+    color: #4C4C6D;
+}
+
+.raedi span{
+    padding-top: 10px ;
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: 60px ;
+    margin-right: 60px ;
+}
+
+.raedi ul li{
+    color: #1B9C85;
+    list-style: none;
+    font-weight: 600;
+}
+
+.raedi .gambar2 {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.raedi .gambar2 img {
+    width: 600px;
+}
+.raedi .gambar3 {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
