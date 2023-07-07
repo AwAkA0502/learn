@@ -53,7 +53,7 @@ nav{
 }
 
 .logo img{
-    z-index: 101;
+    z-index: 100;
     position: fixed;
     margin: 20px 60px;
     height: 80px;
@@ -178,26 +178,25 @@ nav a{
 }
 
 .bagian3{
+    display: block;
     width: 100vw;
     height: 830px;
+    background-image: url("pg1.2.png");
+    background-size: 1200px;
+    background-position-y: 225px ;
+    background-position-x: -50px ;
+    background-repeat: no-repeat;
 }
+
 .bagian3 #bg3{
-    position: absolute;
-    padding-top: 150px;
-    right: 100px;
-    z-index: -2;
-}
-.bagian3 .pilihan1 img{
     display: none;
 }
 
-.bagian3 .pilihan2 img{
-    display: none;
-}
 .bagian3 h1{
     padding-top: 100px ;
     color: #4C4C6D;
-    font-size: 100px;
+    font-size: 80px;
+    font-weight: 800;
     display: flex;
     justify-content: center;
 }
@@ -208,59 +207,72 @@ nav a{
 }
 
 .bagian3 ul .pilihan1{
-    height: 514px;
-    width: 416px;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    height: 414px;
+    width: 356px;
     background-color: #1B9C85;
-    border-radius: 50px;
+    border-radius: 40px;
     transition: 1s;
+}
+.bagian3 ul .pilihan1 img{
+    display: block;
+    padding-top: 40px;
+    z-index: 20;
+    max-width: 280px;
 }
 .bagian3 ul .pilihan1:hover{
     transform: scale(1.1);
     z-index: 2;
 }
 .bagian3 ul .pilihan1::before{
-    content: url("arus listrik gambar.png");
-    position: relative;
-    float: right;
-    padding-top: 55px;
-    padding-right: 55px;
-    padding-left: 55px;
+    display: none;
 }
 
 
 .bagian3 ul .pilihan1 .arus{
-    width: 200px;
+    padding-top: 10px;
     font-size: 30px;
-    font-weight: 700;
-    position: relative;
-    top: 20px;
-    left: 110px;
+    font-weight: 800;
+    left: 40px;
+    top: 10px;
     color: #FFE194;
+    z-index: 20;
 }
 .bagian3 ul .pilihan1 a{
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 30px;
-    padding-right: 30px; ;
+    padding-left: 20px;
+    padding-right: 20px; ;
     background-color: #4C4C6D;
     border-radius: 50px;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 700;
     position: relative;
     float: right;
-    right: 30px;
-    top: 170px;
+    top: 95px;
     text-decoration: none;
     color: white;
 }
 
 
 .bagian3 ul .pilihan2{
-    height: 514px;
-    width: 416px;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    height: 414px;
+    width: 356px;
     background-color: #1B9C85;
-    border-radius: 50px;
+    border-radius: 40px;
     transition: 1s;
+}
+
+.bagian3 ul .pilihan2 img{
+    display: block;
+    padding-top: 40px;
+    z-index: 20;
+    max-width: 280px;
 }
 
 .bagian3 ul .pilihan2:hover{
@@ -268,46 +280,40 @@ nav a{
     z-index: 2;
 }
 .bagian3 ul .pilihan2::before{
-    content: url("arus listrik gambar.png");
-    position: relative;
-    float: right;
-    padding-top: 55px;
-    padding-right: 55px;
-    padding-left: 55px;
+    display: none;
 }
 
 
 .bagian3 ul .pilihan2 .arus{
-    width: 400px;
-    font-size: 30px;
-    font-weight: 700;
-    position: relative;
-    top: 20px;
-    left: 50px;
+    padding-top: 10px;
+    font-size: 25px;
+    font-weight: 800;
+    left: 40px;
+    top: 10px;
     color: #FFE194;
+    z-index: 20;
 }
 .bagian3 ul .pilihan2 a{
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 30px;
-    padding-right: 30px; ;
+    padding-left: 20px;
+    padding-right: 20px; ;
     background-color: #4C4C6D;
     border-radius: 50px;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 700;
     position: relative;
     float: right;
-    right: 30px;
-    top: 120px;
+    top: 70px;
     text-decoration: none;
     color: white;
 }
+
 
 .bagian4{
     width: 100vw;
     height: 850px;
     background-color: #4C4C6D;
-
 }
 
 .bagian4 ul{
@@ -384,7 +390,7 @@ input[type="submit"]:hover {
     color: #FFE194;
 }
 
-@media screen and (max-width:450px) {
+@media screen and (max-width:576px) {
     body{
         overflow-x: none;
     }
@@ -463,7 +469,7 @@ input[type="submit"]:hover {
         display: none;
     }
     .container{
-        background-image: url("pg1.1.png");
+        background-image: none;
         background-size: 580px;
         background-position-x: -50px;
         background-position-y: -50px; ;
@@ -695,6 +701,7 @@ input[type="submit"]:hover {
     }
     
     .bagian4 ul .bagian1{
+        width: 400px;
         margin: 30px;
         height: 600px;
         display: flex;
