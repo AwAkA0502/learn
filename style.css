@@ -53,7 +53,7 @@ nav{
 }
 
 .logo img{
-    z-index: 100;
+    z-index: 101;
     position: fixed;
     margin: 20px 60px;
     height: 80px;
@@ -307,10 +307,7 @@ nav a{
     width: 100vw;
     height: 850px;
     background-color: #4C4C6D;
-    background-image: url("bg4.png");
-    background-repeat: no-repeat;
-    background-size: 750px;
-    background-position-x: 100%;
+
 }
 
 .bagian4 ul{
@@ -343,16 +340,17 @@ nav a{
 }
 
 .bagian4 ul .bagian2{
+    padding-top:160px ;
     display: flex;
     flex-direction: row;
-    width: 18%;
+    width: 98%;
 }
 
 .bagian4 ul .bagian2 li{
     font-size: small;
-    padding: 60px;
     font-size: 20px;
     font-weight: 600;
+    padding-left: 50px;
 }
 
 
