@@ -29,7 +29,7 @@
         <div class="bagian1" id="bagian1">
             <img src="pg1.1.png" id="pg1">
             <div class="container1" id="container1">
-                    <h1>WEBSITE BELAJAR <br>MENARIK DAN<br> DIMENGERTI</h1>
+                    <h1>WEBSITE BELAJAR MENARIK DAN DIMENGERTI</h1>
                     <div class="h2">
                     <span id="da1">Tempat belajar yang mempunyai tampilan menarik<br> 
                         dan mudah untuk dimengerti pelajar mengenai<br> 
@@ -89,11 +89,13 @@
                             purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. 
                             Fusce est. Vivamus a tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada 
                             fames ac turpis egestas.</span>
+                        <div class="isian">
+                            <li><input type="text" id="nama" name="nama" class="inputan" value="Nama"><br><br></li>
+                            <li><input type="text" id="email" name="emmail" class="inputan2" value="email"><br><br></li>
+                            <li><input type="text" id="massage" name="massage" class="inputan3" value="massage"><br><br></li>
+                            <input type="submit" value="SEND">
+                        </div>
 
-                        <li><input type="text" id="nama" name="nama" class="inputan" value="Nama"><br><br></li>
-                        <li><input type="text" id="email" name="emmail" class="inputan2" value="email"><br><br></li>
-                        <li><input type="text" id="massage" name="massage" class="inputan3" value="massage"><br><br></li>
-                        <input type="submit" value="SEND">
                 <div class="bagian2">
                     <li><i class="ri-mail-fill"></i><span id="mail">cs@learnservice.com</span></li>
                     <li><i class="ri-phone-fill"></i><span id="telpon">(021) 78940234</span></li>
@@ -119,12 +121,12 @@
     let navBG = document.getElementById("nav");
     window.addEventListener('scroll',function(){
             let value = window.scrollY;
-            // console.log(value);
-            // pg1.style.left = value * 0.4 + 'px';
-            // bg1.style.top = value * 0.2 + "px";
-            // bg3.style.right = (value * 0.5)-300 + "px";
+            console.log(value);
+            //pg1.style.left = value * 0.4 + 'px';
+            //bg1.style.top = value * 0.2 + "px";
+            //bg3.style.right = (value * 0.5)-300 + "px";
             navBG.style.backdropFilter = "blur(" + ((value*0.007 > 6)? 6 : (value*0.007)) + "px)";
-            navBG.style.backgroundColor = "RGBA(255,255,255," + ((value*0.007 > 0.3)? 0.3 : (value*0.07)) + ")";
+            navBG.style.backgroundColor = "RGBA(255,255,255," + ((value*0.007 > 0.8)? 0.8 : (value*0.07)) + ")";
         })
 </script>
 
