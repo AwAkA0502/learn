@@ -17,85 +17,116 @@ body {
     background-size: cover;
     background-color: #E8F6EF;
 }
+
 nav{
-    left: 0;
+    z-index: 100;
     position: fixed;
-    top: 0;
-    width: 100%;
-    transition: top 0.3s;
-    padding-bottom: 10px;
     display: flex;
-    flex-direction: row;
+    align-items: center;
     justify-content: space-between;
-    z-index: 10;
+    width: 100%;
+    top: 0;
+    right: 0;
+    padding: 28px 5%;
+    transition: all .50s ease;
     backdrop-filter: blur(8px);
 }
 
-nav .logo img {
-    padding-left: 50px;
-    height: 80px;
+.learn {
+    color: transparent;
+}
+
+.logo img{
+    z-index: 9900;
+    position: fixed;
+    margin: 20px 60px;
+    max-width: 200px;
+}
+    
+nav a{
+    font-weight: 800;
+    font-size: 25px;
 }
 .nav1{
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
     list-style: none;
-    width: 40%;
-    padding-top: 30px;
-    margin-right: -55px;
+    font-weight: 800;
+    font-size: 15px;
 }
-.nav1 li a {
-    font-weight: bold;
+
+.nav1 li a{
+    text-decoration: none;
     font-size: 20px;
-    text-decoration: none;
-    color: rgb(44, 44, 44);
+    color: #323232;
+    padding: 5px 0;
+    margin-left: 90px ;
 }
-nav ul{
+.signlog {
     display: flex;
-    justify-content: space-between;
-    list-style: none;
-    width: 18%;
-    padding-top: 20px;
-    padding-right: 50px;
 }
-
-nav ul li a {
+.signlog a{
+    margin-left: 20px;
     text-decoration: none;
-    font-weight: bold;
-    color: rgb(44, 44, 44);
-}
-.signup{
-    border-style: solid;
-    padding: 10px;
-    border-radius: 30px;
 }
 
-.login{
+.signlog a .login{
+    width: 100%;
+    color: #E8F6EF;
+    font-size: 15px;
     background-color: #1B9C85;
-    padding: 12px;
-    padding-left: 25px;
-    padding-right: 25px;
-    border-radius: 30px;
+    padding: 15px 25px;
+    border-radius: 40px;
+}
+
+.signlog a .signup{
+    color: #323232;
+    border : 2px solid #323232;
+    font-size: 15px;
+    padding: 15px 25px;
+    border-radius: 40px;
+}
+
+#menu{
+    display: none;
+    color:#323232;
+    padding-left: 20px;
+    font-weight: 900;
+    font-size: 50px;
 }
 
 .hambatan{
+    margin-top: 150px;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin: 120px;
 }
+
 .hambatan ul{
     font-weight: 600;
     color: #1B9C85;
 }
+
+.hambatan img{
+    width: 20%;
+}
+
 .hambatan h1 {
-    font-size: 60px;
+    text-align: center;
+    font-size: 6vw;
 }
+
 .hambatan span {
-    font-size: 20px;
-    padding-top: 30px;
+    text-align: center;
+    font-size: 2vw;
+    font-weight: 500;
+    padding: 30px;
 }
+
 .rangse {
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -108,7 +139,7 @@ nav ul li a {
     align-items: center;
 }
 .rangse .rurangse h1{
-    font-size: 60px;
+    font-size: 4vw;
 }
 .rangse .rurangse ul{
     padding: 20px;
@@ -122,8 +153,7 @@ nav ul li a {
     color: #1B9C85;
 }
 .rangse .rurangse img{
-    padding-top: 30px;
-    padding-right: 60px;
+    width: 40%;
     color: #1B9C85;
 }
 
@@ -135,6 +165,7 @@ nav ul li a {
 }
 
 .rangrel {
+    width: 100vw;
     display: flex;
     flex-direction: column;
 }
@@ -146,12 +177,13 @@ nav ul li a {
     align-items: center;
 }
 .rangrel .rurangrel h1 {
-    font-size: 60px;
+    text-align: center;
+    font-size: 4vw;
     font-weight: 800;
 }
 
 .rangrel .rurangrel img {
-    width: 700px;
+    width: 40%;;
 }
 
 .rangrel .rurangrel ul li{
@@ -159,33 +191,34 @@ nav ul li a {
     font-weight: 600;
 }
 
-.rangrel span{
-    padding-left: 60px;
-    margin: 50px;
-    font-size: 30px;
+.rangrel .rurangrel span{
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-size: 20px;
     font-weight: 500;
 }
 
 .pengarus {
+    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .pengarus h1 {
-    font-size: 60px;
+    font-size: 4vw;
+    text-align: center;
     color: #4C4C6D;
 }
 .pengarus span {
-    padding-top: 30px ;
+    padding: 30px ;
     text-align: justify;
-    font-size: 30px;
+    font-size: 2vw;
     font-weight: 600;
-    margin-left: 60px ;
-    margin-right: 60px ;
 }
 
 .pengkapa {
+    width: 100vw;
     margin-top: 60px;
     display: flex;
     flex-direction: column;
@@ -194,19 +227,19 @@ nav ul li a {
 
 .pengkapa h1 {
     color: #4C4C6D;
-    font-size: 60px;
+    font-size: 4vw;
 }
 
 .pengkapa span{
-    padding-top: 30px ;
+    padding: 30px ;
     text-align: justify;
-    font-size: 30px;
+    font-size: 2vw;
     font-weight: 600;
-    margin-left: 60px ;
-    margin-right: 60px ;
+
 }
 
 .rumkap {
+    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center ;
@@ -214,15 +247,16 @@ nav ul li a {
 }
 
 .rumkap h1{
-    font-size: 60px;
+    font-size: 5vw;
     color: #4C4C6D;
 }
 
 .rumkap span{
-    font-size: 30px;
+    font-size: 1vw;
+    font-weight: 500;
 }
 
-.rumkap ul {
+.rumkap .rumkap1 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -235,25 +269,31 @@ nav ul li a {
     color: #1B9C85;
 }
 
-.rumkap ul li img{
-    width: 500px;
+.rumkap img{
+    width: 30%;
     padding-top: 30px ;
     padding-bottom: 50px;
 }
 
 .rumkap .rumkap2{
+    width: 100vw;
     align-items: center;
     display: flex;
     flex-direction: column;
 }
 
 .rumkap .rumkap2 #rk{
-    width: 500PX;
+    width: 50%;
+}
+
+.rumkap .rumkap2 #rk2{
+    width: 80%;
 }
 
 .rumkap span {
+    text-align: center;
     padding-top: 20px;
-    font-size: 25px;
+    font-size: 4vw;
     color: #1B9C85;
 }
 
@@ -263,10 +303,12 @@ nav ul li a {
     align-items: center;
 }
 .rumkap .rumkap3 #rk3{
-    width: 400px;
+    width: 60%;
 }
 
 .pengdie {
+    padding: 30px;
+    width: 100vw;
     margin-top: 30px;
     display: flex;
     flex-direction: column;
@@ -274,77 +316,85 @@ nav ul li a {
 }
 
 .pengdie h1{
-    font-size: 60px;
+    font-size: 4vw;
     color: #4C4C6D;
 }
 
 .pengdie span{
     text-align: justify;
-    padding-top: 10px ;
-    font-size: 30px;
+    padding: 30px ;
+    font-size: 2vw;
     font-weight: 600;
-    margin-left: 60px ;
-    margin-right: 60px ;
 }
 
 .kardie {
+    width: 100vw;
     margin-top: 30px;
     display: flex;
     flex-direction: column;
-    align-items: center ;
 }
 
 .kardie h1{
-    font-size: 60px;
+    text-align: center;
+    font-size: 4vw;
     color: #4C4C6D;
+}
+
+.kardie ol{
+    padding-left: 100px;
 }
 
 .kardie ol li{
-    text-align: justify;
-    padding-top: 10px ;
-    font-size: 30px;
-    font-weight: 600;
-    padding-right: 70px;
+    text-align: start;
+    font-size: 3vw;
+    font-weight: 500;
+    padding: 10px;
 }
 
 .jendie {
+    width: 100vw;
     margin-top: 30px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-left: 60px;
 }
 
 .jendie h1{
-    font-size: 60px;
+    text-align: center;
+    font-size: 4vw;
     color: #4C4C6D;
 }
+
+.jendie ol {
+    padding-left: 100px;
+}
+
 .jendie ol li{
     text-align: justify;
-    padding-top: 10px ;
-    font-size: 30px;
-    font-weight: 600;
-    padding-right: 70px;
+    padding: 10px ;
+    font-size: 3vw;
+    font-weight: 500;
 }
 
 .raedi {
+    padding: 30px;
+    width: 100vw;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin: 50px;
 }
 
 .raedi h1{
-    font-size: 60px;
+    text-align: center;
+    font-size: 4vw;
     color: #4C4C6D;
 }
 
 .raedi span{
+    text-align: center;
     padding-top: 10px ;
-    font-size: 30px;
+    font-size: 2vw;
     font-weight: 600;
-    margin-left: 60px ;
-    margin-right: 60px ;
 }
 
 .raedi ul li{
@@ -353,17 +403,559 @@ nav ul li a {
     font-weight: 600;
 }
 
+.raedi .gambar1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.raedi .gambar1 img{
+    width: 80%;
+}
+
 .raedi .gambar2 {
+    width: 80vw;
     padding-top: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .raedi .gambar2 img {
-    width: 600px;
+    width: 60%;
 }
 .raedi .gambar3 {
-    padding-top: 50px;
+    padding-top: 20px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.raedi .gambar3 img{
+    width: 60%;
+}
+
+
+@media screen and (max-width:1200px) {
+    nav {
+        left: 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        transition: top 0.3s;
+        padding-bottom: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        z-index: 10;
+        backdrop-filter: blur(0px);
+    }
+    .nav1{
+        font-size: 20px;
+        border-radius: 30px;
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 200px;
+        height: 60vh;
+        background-color: #1B9C85;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        z-index: 999999999;
+        transition: all .50s ease;
+    }
+
+    .nav1.open{
+        z-index: 999999999;
+        right: 2% !important;
+    }
+
+    .nav1 li a{
+        z-index: 999999999;
+        font-size: 25px;
+        display: block;
+        margin: 12px 0;
+        padding: 0px 25px;
+        transition: all .50s ease;
+    }
+
+    .nav1 .open{
+        right: 2%;
+    }
+    .logo img{
+        margin: 20px 20px;
+        max-width: 150px;
+    }
+
+    .signlog a {
+        margin-left: 5px;
+    }
+    .signlog a .login{
+        color: #E8F6EF;
+        font-size: 20px;
+        background-color: #1B9C85;
+        padding: 5px 15px;
+        border-radius: 40px;
+    }
+    
+    .signlog a .signup{
+        color: #323232;
+        border : 2px solid #323232;
+        font-size: 20px;
+        padding: 5px 10px;
+        border-radius: 40px;
+    }
+
+    #menu{
+        font-size: 28px;
+        display: block;
+    }
+    
+}
+
+@media screen and (max-width:576px) {
+    body{
+        overflow-x: none;
+    }
+    nav {
+        left: 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        transition: top 0.3s;
+        padding-bottom: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        z-index: 10;
+        backdrop-filter: blur(0px);
+    }
+    .nav1{
+        font-size: 20px;
+        border-radius: 30px;
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 200px;
+        height: 60vh;
+        background-color: #1B9C85;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        z-index: 999999999;
+        transition: all .50s ease;
+    }
+
+    .nav1.open{
+        z-index: 999999999;
+        right: 2% !important;
+    }
+
+    .nav1 li a{
+        z-index: 999999999;
+        font-size: 25px;
+        display: block;
+        margin: 12px 0;
+        padding: 0px 25px;
+        transition: all .50s ease;
+    }
+
+    .nav1 .open{
+        right: 2%;
+    }
+    .logo img{
+        margin: 20px 20px;
+        max-width: 120px;
+    }
+
+    .signlog a {
+        margin-left: 5px;
+    }
+    .signlog a .login{
+        color: #E8F6EF;
+        font-size: 15px;
+        background-color: #1B9C85;
+        padding: 5px 15px;
+        border-radius: 40px;
+    }
+    
+    .signlog a .signup{
+        color: #323232;
+        border : 2px solid #323232;
+        font-size: 15px;
+        padding: 5px 10px;
+        border-radius: 40px;
+    }
+    .hambatan{
+        margin-top: 100px;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .hambatan ul{
+        font-weight: 600;
+        color: #1B9C85;
+    }
+
+    .hambatan img{
+        width: 60%;
+    }
+    
+    .hambatan h1 {
+        font-size: 8vw;
+    }
+    
+    .hambatan span {
+        text-align: center;
+        font-size: 20px;
+        padding: 20px;
+        font-weight: 500;
+        padding-top: 30px;
+    }
+    
+    .rangse {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .rangse .rurangse {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rangse .rurangse img{
+        width: 100%;
+    }
+    .rangse .rurangse h1{
+        text-align: center;
+        font-size: 8vw;
+    }
+
+    .rangse .rurangse ul{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .rangse .rurangse ul li{
+        font-weight: 600;
+        color: #1B9C85;
+    }
+    .rangse .rurangse img{
+        max-width: 400px;
+        padding-top: 0;
+        padding-right: 0;
+        color: #1B9C85;
+    }
+    
+    .rangse span{
+        padding-left: 0;
+        margin: 0;
+        font-size: 20px;
+        font-weight: 500;
+        padding-bottom: 50px;
+    }
+    
+    .rangrel {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .rangrel .rurangrel {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+    .rangrel .rurangrel h1 {
+        text-align: center;
+        font-size: 8vw;
+        font-weight: 600;
+        font-weight: 800;
+    }
+    
+    .rangrel .rurangrel img {
+        width: 80%;
+    }
+    
+    .rangrel .rurangrel ul li{
+        color: #1B9C85;
+        font-weight: 600;
+        font-size: 15px;
+    }
+    
+    .rangrel span{
+        padding-left: 0;
+        margin: 0;
+        font-size: 20px;
+        font-weight: 500;
+        padding-top: 20px ;
+        padding-bottom: 20px ;
+    }
+    
+    .pengarus {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .pengarus h1 {
+        text-align: center;
+        font-size: 8vw;
+        font-weight: 800;
+        color: #4C4C6D;
+    }
+    .pengarus span {
+        padding: 30px;
+        text-align: justify;
+        font-size: 20px;
+        font-weight: 600;
+        margin-left: 0 ;
+        margin-right: 0 ;
+    }
+    
+    .pengkapa {
+        width: 100vw;
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .pengkapa h1 {
+        color: #4C4C6D;
+        font-size: 22px;
+        font-weight: 800;
+    }
+    
+    .pengkapa span{
+        padding: 30px;
+        text-align: justify;
+        font-size: 20px;
+        font-weight: 600;
+        margin-left: 0 ;
+        margin-right: 0 ;
+    }
+    
+    .rumkap {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center ;
+        margin-top: 30px;
+    }
+    
+    .rumkap h1{
+        font-size: 20px;
+        color: #4C4C6D;
+    }
+    .rumkap img{
+        width: 80%;
+        padding-bottom: 30px;
+    }
+    .rumkap span{
+        text-align: center;
+        padding: 40px;
+        font-size: 20px;
+    }
+    
+    .rumkap ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .rumkap ul li {
+        font-size: 2vw;
+        display: flex;
+        flex-direction: column;
+        font-weight: 600 ;
+        color: #1B9C85;
+    }
+    
+    .rumkap ul li img{
+        width: 80%;
+        padding-top: 30px ;
+        padding-bottom: 50px;
+    }
+    
+    .rumkap .rumkap2{
+        width: 100vw;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .rumkap .rumkap2 img{
+        width: 80%;
+    }
+    
+    .rumkap .rumkap2 #rk2{
+        width: 80%;
+    }
+    .rumkap .rumkap2 #rk{
+        width: 80%;
+    }
+    
+    .rumkap span {
+        padding-top: 20px;
+        font-size: 5vw;
+        color: #1B9C85;
+    }
+    
+    .rumkap .rumkap3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .rumkap .rumkap3 #rk3{
+        width: 80%;
+    }
+    
+    .pengdie {
+        width: 100vw;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center ;
+    }
+    
+    .pengdie h1{
+        text-align: center;
+        font-size: 10vw;
+        color: #4C4C6D;
+    }
+    
+    .pengdie span{
+        text-align: center;
+        padding: 30px;
+        font-size: 4vw;
+        font-weight: 600;
+        margin-left: 0 ;
+        margin-right: 0 ;
+    }
+    
+    .kardie {
+        width: 100vw;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center ;
+    }
+    
+    .kardie h1{
+        text-align: center;
+        font-size: 10vw;
+        color: #4C4C6D;
+    }
+    
+    .kardie ol {
+        padding: 50px;
+    }
+
+    .kardie ol li{
+        text-align: start;
+        padding-top: 10px ;
+        font-size: 20px;
+        font-weight: 600;
+        padding-right: 0;
+    }
+    
+    .jendie {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+    
+    .jendie h1{
+        font-size: 10vw;
+        color: #4C4C6D;
+    }
+
+    .jendie ol {
+        padding: 50px;
+    }
+
+    .jendie ol li{
+        text-align: start;
+        padding-top: 10px ;
+        font-size: 20px;
+        font-weight: 600;
+        padding-right: 0;
+    }
+    
+    .raedi {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+    
+    .raedi h1{
+        text-align: center;
+        font-size: 7vw;
+        color: #4C4C6D;
+    }
+    
+    .raedi span{
+        text-align: center;
+        padding: 10px;
+        font-size: 4vw;
+        font-weight: 600;
+        margin: 0;
+    }
+    
+    .raedi ul li{
+        color: #1B9C85;
+        list-style: none;
+        font-weight: 600;
+    }
+
+    .raedi .gambar1 img{
+        width: 100%;
+    }
+    .raedi .gambar2 {
+        width: 100vw;
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .raedi .gambar2 img {
+        width: 80%;
+    }
+    .raedi .gambar3 {
+        padding-top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .raedi .gambar3 img{
+        width: 80%;
+    }
 }
