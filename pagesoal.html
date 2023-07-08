@@ -5,23 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style1.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <title>Document</title>
     <title>Document</title>
 </head>
 <body>
-    <nav>
-        <div class="logo">
-            <h1><img src="logo.png" id="logo"></img></h1>
-        </div>
-        <div class="nav1">
-            <li><a href=index.html>Home</a> </li>
+    <a href="#" class="logo"><img src="logo.png"></a>
+    <nav id="nav" style="background-color: rgba(255, 255, 255, 0);">
+        <a href="#" class="learn">LEARN</a>
+        <div class="nav1" id="nav1">
+            <li><a href="#bagian1">Home</a> </li>
             <li><a href="#bagian2">About</a> </li>
             <li><a href="#bagian3">Materi</a> </li>
             <li><a href="#bagian4">Contact</a> </li>
         </div>
-        <ul>
-        <li><a href="dasboard.html"><div class="signup">Sign Up</div></a></li>
-        <li><a href="dasboard.html"><div class="login">login</div></a></li>
-        </ul>
+        <div class="signlog">
+            <a href="dasboard.html"><div class="signup">Sign Up</div></a></li>
+            <a href="dasboard.html"><div class="login">login</div></a></li>
+            <i class="ri-menu-fill" id="menu"></i>
+        </div>
     </nav>
     <div class="hambatan">
         <h1>HAMBATAN LISTRIK</h1>
@@ -62,11 +66,11 @@
                 <li>V adalah tegangan listrik (dalam volt, V)..</li>
                 <li>I adalah arus listrik (dalam ampere, A).</li>
             </ul>
+            <span>ARUS : I = I1 + I2 + … In<br>
+                TEGANGAN : V = V1 = V2 =… Vn<br>
+                HAMBATAN : 1/R = 1/R1 + 1/R2 + … 1/Rn
+            </span>
         </div>
-        <span>ARUS : I = I1 + I2 + … In<br>
-            TEGANGAN : V = V1 = V2 =… Vn<br>
-            HAMBATAN : 1/R = 1/R1 + 1/R2 + … 1/Rn
-        </span>
     </div>
     <div class="pengarus">
         <h1>PENGERTIAN ARUS LISTRIK</h1>
@@ -89,14 +93,14 @@
     <div class="rumkap">
         <h1>RUMUS KAPASITANSI</h1>
         <span>Kapasitansi C dari sebuah kapasitor pelat sejajar dalam ruang hampa:</span>
-        <ul>
-            <li><img src="rumus kapasitansi 1.png"></li>
-            <li>C adalah kapasitansi dalam farad (F)</li>
-            <li>Q adalah muatan listrik yang disimpan dalam kapasitor dalam coulomb (C)</li>
-            <li>V adalah tegangan yang diterapkan pada kapasitor dalam volt (V)</li>
-        </ul>
+        <img src="rumus kapasitansi 1.png">
+            <ul>
+                <li>C adalah kapasitansi dalam farad (F)</li>
+                <li>Q adalah muatan listrik yang disimpan dalam kapasitor dalam coulomb (C)</li>
+                <li>V adalah tegangan yang diterapkan pada kapasitor dalam volt (V)</li>
+            </ul>
         <div class="rumkap2">
-            <img src="rumus kapasitansi 2.1.png">
+            <img src="rumus kapasitansi 2.1.png" id="rk2">
             <img src="rumus kapasitansi 2.png" id="rk">
             <ul>
                 <li>E adalah Medan Listrik</li>
@@ -131,7 +135,7 @@
         </ol>
     </div>
     <div class="jendie">
-        <h1>Jenis Dielektrik</h1>
+        <h1>JENIS DIELEKTRIK</h1>
         <ol>
             <li>Ketahanan Terhadap Tegangan Listrik</li>
             <li>Kestabilan Terhadap Suhu</li>
@@ -167,5 +171,29 @@
             <img src="komponen arus.png">
         </div>
     </div>
+
+    <script>
+        let menu = document.querySelector('#menu');
+        let navbar = document.querySelector('.nav1');
+    
+        menu.onclick = () => {
+            menu.classList.toggle("ri-skip-right-line");
+            navbar.classList.toggle('open');
+        }
+    
+        let bg = document.getElementById("bg1");
+        let pg1 = document.getElementById("pg1");
+        let bg3 = document.getElementById("bg3");
+        let navBG = document.getElementById("nav");
+        window.addEventListener('scroll',function(){
+                let value = window.scrollY;
+                console.log(value);
+                //pg1.style.left = value * 0.4 + 'px';
+                //bg1.style.top = value * 0.2 + "px";
+                //bg3.style.right = (value * 0.5)-300 + "px";
+                navBG.style.backdropFilter = "blur(" + ((value*0.007 > 6)? 6 : (value*0.007)) + "px)";
+                //navBG.style.backgroundColor = "RGBA(255,255,255," + ((value*0.007 > 0.8)? 0.8 : (value*0.07)) + ")";
+            })
+    </script>
 </body>
 </html>
