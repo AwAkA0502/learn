@@ -44,10 +44,10 @@ function showQuestion(){
     imgPertama.style.display = "block";
 
     if(questionNo == 1){
-       rumusPler.src ="jawab3.png";
+       rumusPler.src ="jawab1.png";
       }
       else {
-        rumusPler.src ="jawab4.png";
+        rumusPler.src ="jawab2.png";
     }
 
     if(questionNo == 1){
