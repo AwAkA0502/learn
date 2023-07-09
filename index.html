@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <title>Document</title>
 </head>
 <body>
@@ -25,6 +26,8 @@
             <i class="ri-menu-fill" id="menu"></i>
         </div>
     </nav>
+    <img src="background.png" class="bg1" id="bg1">
+    <img src="background2.png" class="bg" id="bg">
     <div class="container">
         <div class="bagian1" id="bagian1">
             <img src="pg1.1.png" id="pg1">
@@ -39,22 +42,22 @@
             </div>
         </div>
         <div class="bagian2" id="bagian2">
-            <h1 id="ab1">About us</h1>
+            <h1 id="ab1">ABOUT US</h1>
             <div class="gambar2">
                 <img src="gambar character.png" id="abgmbr">
-            </div>
-            <div class="aboutus">
-                <h1>About us</h1>
-                <span>Selamat datang di Learn. Kami adalah Mahasiswa
-                    Semester 2 yang ingin membuat sebuah tempat 
-                    belajar yang cocok bagi para pelajar. Learn bisa 
-                    kalian akses di manapun dan kapanpun.
-                    Learn juga mempunyai alur belajar bagi pelajar.
-
-                    Kami ingin memberikan kalian pengalaman belajar
-                    yang bermanfaat dan inovatif. Learn juga mempunyai 
-                    tampilan antarpengguna yang nyaman dilihat bagi 
-                    para pelajar.</span>
+                <div class="kata">
+                    <span>Selamat datang di Learn. Kami adalah Mahasiswa
+                        Semester 2 yang ingin membuat sebuah tempat 
+                        belajar yang cocok bagi para pelajar. Learn bisa 
+                        kalian akses di manapun dan kapanpun.
+                        Learn juga mempunyai alur belajar bagi pelajar.
+    
+                        Kami ingin memberikan kalian pengalaman belajar
+                        yang bermanfaat dan inovatif. Learn juga mempunyai 
+                        tampilan antarpengguna yang nyaman dilihat bagi 
+                        para pelajar.</span>
+                </div>
+                </div>
             </div>
         </div>
         <div class="bagian3" id="bagian3">
@@ -78,11 +81,11 @@
                 <div class="bagian1">
                         <h1>CONTACT US</h1>
                         <div class="logo">
-                            <i class="ri-instagram-fill"></i>
+                            <i class="ri-telegram-fill"></i>
                             <i class="ri-facebook-fill"></i>
                             <i class="ri-twitter-fill"></i>
                             <i class="ri-instagram-fill"></i>
-                            <i class="ri-tiktok-fill"></i>
+                            <i class="ri-discord-fill"></i>
                         </div>
                         <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
                             Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, 
@@ -112,21 +115,23 @@
     let navbar = document.querySelector('.nav1');
 
     menu.onclick = () => {
-        menu.classlist.toggle('ri-menu-fill');
-        navbar.classlist.toggle('open');
+        menu.classList.toggle("ri-skip-right-line");
+        navbar.classList.toggle('open');
     }
-    let bg = document.getElementById("bg1");
+
+    let bg = document.getElementById("bg");
     let pg1 = document.getElementById("pg1");
-    let bg3 = document.getElementById("bg3");
+    let bg1 = document.getElementById("bg1");
     let navBG = document.getElementById("nav");
     window.addEventListener('scroll',function(){
             let value = window.scrollY;
             console.log(value);
             //pg1.style.left = value * 0.4 + 'px';
-            //bg1.style.top = value * 0.2 + "px";
+            bg1.style.top = value * 0.7 + "px";
+            bg.style.top = value * 0.6 + "px";
             //bg3.style.right = (value * 0.5)-300 + "px";
             navBG.style.backdropFilter = "blur(" + ((value*0.007 > 6)? 6 : (value*0.007)) + "px)";
-            navBG.style.backgroundColor = "RGBA(255,255,255," + ((value*0.007 > 0.8)? 0.8 : (value*0.07)) + ")";
+            //navBG.style.backgroundColor = "RGBA(255,255,255," + ((value*0.007 > 0.8)? 0.8 : (value*0.07)) + ")";
         })
 </script>
 
