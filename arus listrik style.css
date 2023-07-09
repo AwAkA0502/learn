@@ -13,73 +13,99 @@ body {
 }
 
 nav{
-    left: 0;
+    z-index: 100;
     position: fixed;
-    top: 0;
-    width: 100%;
-    transition: top 0.3s;
-    padding-bottom: 10px;
     display: flex;
-    flex-direction: row;
+    align-items: center;
     justify-content: space-between;
-    z-index: 10;
+    width: 100%;
+    top: 0;
+    right: 0;
+    padding: 28px 5%;
+    transition: all .50s ease;
     backdrop-filter: blur(8px);
 }
 
-nav .logo img {
-    padding-left: 50px;
-    height: 80px;
+.learn {
+    color: transparent;
+}
+
+.logo img{
+    z-index: 9900;
+    position: fixed;
+    margin: 20px 60px;
+    max-width: 150px;
+}
+    
+nav a{
+    font-weight: 800;
+    font-size: 25px;
 }
 .nav1{
+    padding-left: 100px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
     list-style: none;
-    width: 40%;
-    padding-top: 30px;
-    margin-right: -55px;
+    font-weight: 800;
+    font-size: 15px;
 }
-.nav1 li a {
-    font-weight: bold;
+
+.nav1 li a{
+    text-decoration: none;
     font-size: 20px;
-    text-decoration: none;
-    color: rgb(44, 44, 44);
+    color: #323232;
+    padding: 5px 0;
+    margin-left: 90px ;
 }
-nav ul{
+.signlog {
     display: flex;
-    justify-content: space-between;
-    list-style: none;
-    width: 15%;
-    padding-top: 20px;
-    padding-right: 50px;
 }
-
-nav ul li a {
+.signlog a{
+    margin-left: 20px;
     text-decoration: none;
-    font-weight: bold;
-    color: rgb(44, 44, 44);
-}
-.signup{
-    border-style: solid;
-    padding: 10px;
-    border-radius: 30px;
 }
 
-.login{
+.signlog a .login{
+    color: #E8F6EF;
+    font-size: 15px;
     background-color: #1B9C85;
-    padding: 12px;
-    padding-left: 25px;
-    padding-right: 25px;
-    border-radius: 30px;
+    padding: 15px 25px;
+    border-radius: 40px;
+    transition: 0.5s ease-in;
+}
+
+.signlog a .login:hover{
+    color: #4C4C6D;
+    font-size: 15px;
+    background-color: #FFE194;
+    padding: 15px 25px;
+    border-radius: 40px;
+}
+.signlog a .signup{
+    color: #323232;
+    border : 2px solid #323232;
+    font-size: 15px;
+    padding: 15px 25px;
+    border-radius: 40px;
+}
+
+#menu{
+    display: none;
+    color:#323232;
+    padding-left: 20px;
+    font-weight: 900;
+    font-size: 50px;
 }
 /* konten */
 
 .judul h1{
     font-size: 3.5em;
     color: #4C4C6D;
-    margin-top: 90px;
+    margin-top: 100px;
 }
 
 .materi{
+    
     display: flex;
     align-items: center;
     font-size: 1.5em;
@@ -286,4 +312,201 @@ main{
 }
 #question{
     text-align: justify;
+}
+
+.bagian4{
+    width: 100vw;
+    height: 850px;
+    background-color: #4C4C6D;
+}
+
+.bagian4 ul{
+    list-style: none;
+}
+
+.bagian4 ul .bagian1{
+    padding: 100px;
+    margin: 0;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+}
+.bagian4 ul .bagian1 .logo{
+    font-size: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.bagian4 ul .bagian1 h1{
+    color: #FFE194;
+    font-size: 50px;
+    font-weight: 800;
+}
+.bagian4 ul .bagian1 span{
+    width: 50vw;
+    font-weight: 600;
+    color:white;
+    padding-bottom: 30px;
+}
+
+.bagian4 ul .bagian2{
+    padding-top: 100px;
+    margin: 0;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+.bagian4 ul .bagian2 li{
+    font-size: small;
+    font-size: 1.3vw;
+    font-weight: 600;
+    padding-left: 50px;
+}
+
+
+input[type="text"] {
+    font-size: 20px;
+    color: #323232;
+    height: 40px;
+    width: 70%;
+    padding: 20px ;
+    border: 1px solid rgba(204, 204, 204, 0);
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+input[type="text"]:hover {
+    font-size: 20px;
+    color: #323232;
+    height: 40px;
+    width: 70%;
+    padding: 20px ;
+    border: 1px solid rgba(204, 204, 204, 0);
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    width: 200px;
+    background-color: #FFE194;
+    color: rgb(48, 48, 48);
+    padding: 20px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 26px;
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+input[type="submit"]:hover {
+    background-color: #1B9C85;
+    color: #FFE194;
+}
+
+
+.bagian4 ul .bagian2 li span{
+    padding-left: 20px;
+}
+
+.ri-telegram-fill:hover{
+    color: #0088cc;
+}
+
+.ri-facebook-fill:hover{
+    color: #3b5998;
+}
+
+.ri-twitter-fill:hover{
+    color: #3b5998;
+}
+.ri-instagram-fill:hover{
+    color: 	#7232bd;
+}
+
+.ri-discord-fill:hover{
+    color: #7289da	;
+}
+
+@media screen and (max-width: 1200px){
+    nav {
+        left: 0;
+        position: fixed;
+        top: 0;
+        width: 90%;
+        transition: top 0.3s;
+        padding-bottom: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        z-index: 10;
+        backdrop-filter: blur(0px);
+    }
+    .nav1{
+        font-size: 20px;
+        border-radius: 30px;
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 200px;
+        height: 250px;
+        background-color: #1B9C85;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        z-index: 999999999;
+        transition: all .50s ease;
+    }
+
+    .nav1.open{
+        z-index: 999999999;
+        right: 2% !important;
+    }
+
+    .nav1 li a{
+        z-index: 999999999;
+        font-size: 25px;
+        display: block;
+        margin: 12px 0;
+        padding: 0px 25px;
+        transition: all .50s ease;
+    }
+
+    .nav1 .open{
+        right: 2%;
+    }
+    .logo img{
+        margin: 20px 20px;
+        max-width: 150px;
+    }
+
+    .signlog a {
+        margin-left: 5px;
+    }
+    .signlog a .login{
+        color: #E8F6EF;
+        font-size: 20px;
+        background-color: #1B9C85;
+        padding: 5px 15px;
+        border-radius: 40px;
+    }
+    
+    .signlog a .signup{
+        color: #323232;
+        border : 2px solid #323232;
+        font-size: 20px;
+        padding: 5px 10px;
+        border-radius: 40px;
+    }
+
+    #menu{
+        font-size: 28px;
+        display: block;
+    }
+    
 }
