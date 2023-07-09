@@ -17,24 +17,6 @@ const questions = [
             {text: "1.5A - 0.5A - 1A", correct: false},
         ]
     },
-    {
-        question: "Jika muatan dan kapasitas kapasitor diketahui berturut-turut sebesar 5 μC dan 20 μF,tentukan beda potensial kapasitor tersebut!",
-        answers: [
-            {text: "0.18 𝑣𝑜𝑙𝑡 ", correct: false},
-            {text: "5 𝑣𝑜𝑙𝑡 ", correct: false},
-            {text: "0,5 𝑣𝑜𝑙𝑡 ", correct: false},
-            {text: "0.25 𝑣𝑜𝑙𝑡 ", correct: true},
-        ]
-    },
-    {
-        question: "Sebuah lampu memiliki hambatan kurang lebih sekitar 4 ohm. Bila lampu tersebut dialiri oleh arus listrik sebesar 2 ampere selama 3 menit, maka berapakah energi listrik yang dihasilkan?",
-        answers: [
-            {text: " 280 J ", correct: false},
-            {text: " 2880 J ", correct: true},
-            {text: " 80 J ", correct: false},
-            {text: "90 J ", correct: false},
-        ]
-    }
 ];
 
 const questionElement = document.getElementById("question");
@@ -62,14 +44,9 @@ function showQuestion(){
     imgPertama.style.display = "block";
 
     if(questionNo == 1){
-       rumusPler.src ="jawab1.png";
+       rumusPler.src ="jawab3.png";
       }
-      else if(questionNo == 2){
-        rumusPler.src ="jawab2.png";
-    }
-    else if(questionNo == 3){
-        rumusPler.src ="jawab3.png";
-    }else{
+      else {
         rumusPler.src ="jawab4.png";
     }
 
