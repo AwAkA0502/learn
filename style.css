@@ -15,23 +15,34 @@ body {
     background-size: cover;
     background-color: #E8F6EF;
 }
-#bg1{
-    width: 1920px;
+
+body .bg {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    width: 100%;
 }
+
+#bg1{
+    display: none;
+    width: 100%;
+}
+
+
 
 .container {
     width: 100vw;
-    height: 3100px;
+    height: auto;
 }
 .container .bagian1{
     width: 100vw;
-    height: 810px;
-    display: flex;
-    flex-direction: row-reverse;
+    height: 1110px;
+    position: relative;
 }
 
 #pg1{
-    max-width: 700px;
+    float: right;
+    width: 50%;
     position: relative;
 }
 
@@ -46,6 +57,7 @@ nav{
     right: 0;
     padding: 28px 5%;
     transition: all .50s ease;
+    backdrop-filter: blur(8px);
 }
 
 .learn {
@@ -53,7 +65,7 @@ nav{
 }
 
 .logo img{
-    z-index: 100;
+    z-index: 9900;
     position: fixed;
     margin: 20px 60px;
     height: 80px;
@@ -61,21 +73,31 @@ nav{
     
 nav a{
     font-weight: 800;
-    font-size: 30px;
+    font-size: 25px;
 }
 .nav1{
     display: flex;
     flex-direction: row;
     list-style: none;
     font-weight: 800;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .nav1 li a{
+    font-size: 20px;
     color: #323232;
     padding: 5px 0;
-    margin-left: 20px ;
+    margin-left: 90px ;
+    transition: 0.2s ease-in;
 }
+
+.nav1 li a:hover{
+    font-size: 20px;
+    color: #4C4C6D;
+    padding: 5px 0;
+    margin-left: 90px ;
+}
+
 .signlog {
     display: flex;
 }
@@ -86,8 +108,17 @@ nav a{
 
 .signlog a .login{
     color: #E8F6EF;
-    font-size: 25px;
+    font-size: 15px;
     background-color: #1B9C85;
+    padding: 15px 25px;
+    border-radius: 40px;
+    transition: 0.5s ease-in;
+}
+
+.signlog a .login:hover{
+    color: #4C4C6D;
+    font-size: 15px;
+    background-color: #FFE194;
     padding: 15px 25px;
     border-radius: 40px;
 }
@@ -95,7 +126,7 @@ nav a{
 .signlog a .signup{
     color: #323232;
     border : 2px solid #323232;
-    font-size: 25px;
+    font-size: 15px;
     padding: 15px 25px;
     border-radius: 40px;
 }
@@ -114,12 +145,15 @@ nav a{
 }
 
 .container1{
-    margin: 100px;
+    width: 100%;
+    padding-left: 60px;
+    padding-top: 100px;
+    margin: 0;
 }
 
 .container1 h1{
     color: rgb(44, 44, 44) ;
-    font-size: 69px;
+    font-size: 5vw;
     font-weight:900;
 }
 
@@ -128,7 +162,7 @@ nav a{
     padding-bottom: 50px;
 }
 .container1 .h2 span{
-    font-size: 20px;
+    font-size: 2vw;
     font-weight:550;
 }
 .container1 .moreinfo{
@@ -141,46 +175,60 @@ nav a{
     border-radius: 60px;
     text-decoration: none;
     color: white;
+    transition: 0.5s ease-in;
 }
 
+.container1 .moreinfo:hover{
+    font-size: 30px;
+    font-weight: 700;
+    background-color: #FFE194;
+    padding: 22px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 60px;
+    text-decoration: none;
+    color: #4C4C6D;
+}
+
+
+
 .bagian2{
-    flex-direction: row;
+    padding: 40px;
+    margin-top: 0;
+    flex-direction: column;
     align-items: center;
     justify-content:center;
     display: flex;
     width: 100vw;
-    height: 610px;
+    height: auto;
 }
-.bagian2 img{
+.bagian2 .gambar2 img{
     position: relative;
     float: left;
-    max-width: 520px;
+    width: 40%;
 }
 
-.bagian2 .aboutus{
-    margin-left: 120px;
-    float: right;
-    max-width: 720px;
-}
-
-.bagian2 .aboutus h1{
-    color: #4C4C6D;
-    font-size: 100px;
-}
-.bagian2 .aboutus span{
-    color: rgb(44, 44, 44);
-    font-size: 25px;
+.bagian2 .gambar2 .kata{
     font-weight: 600;
+    padding: 50px;
+    font-size: 2vw;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #323232;
 }
 
 #ab1{
-    display: none;
+    font-size: 8vw;
+    color: #323232;
 }
 
 .bagian3{
     display: block;
     width: 100vw;
-    height: 830px;
+    height: 800px;
     background-image: url("pg1.2.png");
     background-size: 1200px;
     background-position-y: 225px ;
@@ -202,11 +250,13 @@ nav a{
 }
 .bagian3 ul{
     padding-top: 30px;
+    padding-bottom: 80px;
     justify-content: space-around;
     display: flex;
 }
 
 .bagian3 ul .pilihan1{
+    box-shadow: 10px 10px 50px rgb(0, 0, 0,0.6);
     flex-direction: column;
     align-items: center;
     display: flex;
@@ -254,10 +304,17 @@ nav a{
     top: 95px;
     text-decoration: none;
     color: white;
+    transition: 0.5s ease-in;
+}
+
+.bagian3 ul .pilihan1 a:hover{
+    background-color: #FFE194;
+    color: #4C4C6D;
 }
 
 
 .bagian3 ul .pilihan2{
+    box-shadow: 10px 10px 50px rgb(0, 0, 0,0.6);
     flex-direction: column;
     align-items: center;
     display: flex;
@@ -307,6 +364,12 @@ nav a{
     top: 70px;
     text-decoration: none;
     color: white;
+    transition: 0.5s ease-in
+}
+
+.bagian3 ul .pilihan2 a:hover{
+    background-color: #FFE194;
+    color: #4C4C6D;
 }
 
 
@@ -317,13 +380,12 @@ nav a{
 }
 
 .bagian4 ul{
-    display: flex;
-    flex-direction: row;
     list-style: none;
 }
 
 .bagian4 ul .bagian1{
-    margin: 50px;
+    padding: 100px;
+    margin: 0;
     height: 600px;
     display: flex;
     flex-direction: column;
@@ -346,21 +408,34 @@ nav a{
 }
 
 .bagian4 ul .bagian2{
-    padding-top:160px ;
+    padding-top: 100px;
+    margin: 0;
     display: flex;
     flex-direction: row;
-    width: 98%;
+    width: 100%;
 }
 
 .bagian4 ul .bagian2 li{
     font-size: small;
-    font-size: 20px;
+    font-size: 1.3vw;
     font-weight: 600;
     padding-left: 50px;
 }
 
 
 input[type="text"] {
+    font-size: 20px;
+    color: #323232;
+    height: 40px;
+    width: 70%;
+    padding: 20px ;
+    border: 1px solid rgba(204, 204, 204, 0);
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+input[type="text"]:hover {
     font-size: 20px;
     color: #323232;
     height: 40px;
@@ -390,10 +465,37 @@ input[type="submit"]:hover {
     color: #FFE194;
 }
 
-@media screen and (max-width:576px) {
-    body{
-        overflow-x: none;
+
+.bagian4 ul .bagian2 li span{
+    padding-left: 20px;
+}
+
+.ri-telegram-fill:hover{
+    color: #0088cc;
+}
+
+.ri-facebook-fill:hover{
+    color: #3b5998;
+}
+
+.ri-twitter-fill:hover{
+    color: #3b5998;
+}
+.ri-instagram-fill:hover{
+    color: 	#7232bd;
+}
+
+.ri-discord-fill:hover{
+    color: #7289da	;
+}
+
+@media  screen and (max-width: 1200px) {
+    .container .bagian1{
+        width: 100vw;
+        height: auto;
+        position: relative;
     }
+
     nav {
         left: 0;
         position: fixed;
@@ -415,7 +517,268 @@ input[type="submit"]:hover {
         right: -100%;
         width: 200px;
         height: 60vh;
+        background-color: #28b399;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        z-index: 999999999;
+        transition: all .50s ease;
+    }
+
+    .nav1.open{
+        z-index: 999999999;
+        right: 2% !important;
+    }
+
+    .nav1 li a{
+        z-index: 999999999;
+        font-size: 25px;
+        display: block;
+        margin: 12px 0;
+        padding: 0px 25px;
+        transition: all .50s ease;
+    }
+
+    .nav1 .open{
+        right: 2%;
+    }
+    .logo img{
+        margin: 20px 20px;
+        height: 55px;
+    }
+    .signlog a {
+        margin-left: 5px;
+    }
+    .signlog a .login{
+        color: #E8F6EF;
+        font-size: 15px;
         background-color: #1B9C85;
+        padding: 10px 20px;
+        border-radius: 40px;
+    }
+    
+    .signlog a .signup{
+        color: #323232;
+        border : 2px solid #323232;
+        font-size: 15px;
+        padding: 10px 15px;
+        border-radius: 40px;
+    }
+
+    .container1 .moreinfo{
+        font-size: 20px;
+        font-weight: 700;
+        background-color: #1B9C85;
+        padding: 22px;
+        padding-left: 25px;
+        padding-right: 25px;
+        border-radius: 60px;
+        text-decoration: none;
+        color: white;
+    }
+
+    #menu {
+        cursor: pointer;
+        font-size: 35px;
+        display: block;
+    }
+
+    .container1 .h2{
+        padding-top: 20px;
+        padding-bottom: 50px;
+    }
+
+    .bagian2{
+        height: auto;
+    }
+
+    .bagian3{
+        display: block;
+        width: 100vw;
+        height: auto;
+        background-image: url("pg1.2.png");
+        background-size: 800px;
+        background-position-y: 125px ;
+        background-position-x: -50px ;
+        background-repeat: no-repeat;
+    }
+
+    .bagian3 h1{
+        padding-top: 0
+    }
+
+    
+    .bagian3 ul .pilihan1{
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+        height: 300px;
+        width: 256px;
+        background-color: #1B9C85;
+        border-radius: 20px;
+        transition: 1s;
+    }
+    .bagian3 ul .pilihan1 img{
+        display: block;
+        padding-top: 20px;
+        z-index: 20;
+        max-width: 200px;
+    }
+    .bagian3 ul .pilihan1:hover{
+        transform: scale(1.1);
+        z-index: 2;
+    }
+    .bagian3 ul .pilihan1::before{
+        display: none;
+    }
+    
+    
+    .bagian3 ul .pilihan1 .arus{
+        font-size: 20px;
+        left: 40px;
+        top: 10px;
+        color: #FFE194;
+        z-index: 20;
+    }
+    .bagian3 ul .pilihan1 a{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px; ;
+        background-color: #4C4C6D;
+        border-radius: 50px;
+        font-size: 10px;
+        font-weight: 700;
+        position: relative;
+        float: right;
+        left: 65px;
+        top: 80px;
+        text-decoration: none;
+        color: white;
+    }
+    
+    
+    .bagian3 ul .pilihan2{
+        display: block;
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+        height: 300px;
+        width: 256px;
+        background-color: #1B9C85;
+        border-radius: 20px;
+        transition: 1s;
+    }
+
+    .bagian3 ul .pilihan2 img{
+        display: block;
+        padding-top: 20px;
+        z-index: 1;
+        max-width: 200px;
+    }
+    
+    .bagian3 ul .pilihan2:hover{
+        transform: scale(1.1);
+        z-index: 2;
+    }
+    .bagian3 ul .pilihan2::before{
+        display: none;
+    }
+    
+    
+    .bagian3 ul .pilihan2 .arus{
+        font-size: 12px;
+        left: 135px;
+        top: 10px;
+        color: #FFE194;
+        z-index: 1;
+    }
+    .bagian3 ul .pilihan2 a{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px; ;
+        background-color: #4C4C6D;
+        border-radius: 50px;
+        font-size: 10px;
+        font-weight: 700;
+        position: relative;
+        float: right;
+        left: 65px;
+        top: 75px;
+        text-decoration: none;
+        color: white;
+    }
+
+    .bagian4 {
+        background-color: #4C4C6D;
+        height: 1050px;
+    }
+
+    .bagian4 ul{
+        display: block;
+    }
+
+    .bagian4 ul .bagian2{
+        padding: 0;
+        padding-top: 80px;
+        margin: 0;
+        display: flex;
+        align-items: flex-start;
+        justify-content: start;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .bagian4 ul .bagian2 li{
+        text-align: center;
+        font-size: 2vw;
+        font-weight: 600;
+        padding-left: 0;
+        margin: 10px;
+    }
+    
+
+}
+
+@media screen and (max-width:576px) {
+    body{
+        overflow-x: none;
+    }
+
+    .bg{
+        display: none;
+    }
+
+    #bg1{
+        z-index: -1;
+        position: absolute;
+        display: block;
+        width: 100%;
+    }
+    nav {
+        left: 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        transition: top 0.3s;
+        padding-bottom: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        z-index: 10;
+        backdrop-filter: blur(0px);
+    }
+    .nav1{
+        font-size: 20px;
+        border-radius: 20px;
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 50vh;
+        height: 60vh;
+        background-color: #28b399;
         align-items: center;
         display: flex;
         flex-direction: column;
@@ -431,7 +794,7 @@ input[type="submit"]:hover {
     }
 
     .nav1 .open{
-        right: 2%;
+        right: 0%;
     }
     .logo img{
         margin: 20px 20px;
@@ -463,22 +826,23 @@ input[type="submit"]:hover {
         display: flex;
         flex-direction: column;
         width: 100vw;
-        height: 650px;
+        height: auto;
     }
     .bagian1 #pg1{
         display: none;
     }
     .container{
-        background-image: none;
+        background-image: url('pg1.1.png');
         background-size: 580px;
-        background-position-x: -50px;
+        background-position-x: 0px;
         background-position-y: -50px; ;
         background-repeat: no-repeat;
         display: block;
     }
     .container1{
-        align-items: center;
-        justify-content: center;
+        padding: 86px;
+        align-items: flex-start;
+        justify-content:flex-start;
         display: flex;
         flex-direction: column;
     }
@@ -488,16 +852,16 @@ input[type="submit"]:hover {
     }
     .container1 h1{
         color: rgb(44, 44, 44) ;
-        font-size: 49px;
+        font-size: 8vw;
         font-weight:900;
     }
     
     .container1 .h2{
         padding-top: 10px;
-        width: 320px;
+        width: 100%;
     }
     .container1 .h2 span{
-        font-size: 20px;
+        font-size: 4vw;
         font-weight:550;
     }
 
@@ -518,40 +882,29 @@ input[type="submit"]:hover {
         height: 631px;
         width: 100vw;
     }
-    .bagian2 img{
-        margin: 0;
-        max-width: 300px;
+    .bagian2 #ab1{
+        font-size: 15vw;
+        font-weight: 800;
     }
 
-    #ab1{
-        display: block;
-        font-size: 50px;
-        font-weight: 760;
-    }
-    .bagian2 .aboutus{
-        padding-top: 20px;
+    .bagian2 .gambar2 {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-left: 0px;
-        float: right;
-        max-width: 350px;
     }
-    #ab1{
-        font-size: 70px;
-        color: #4C4C6D;
+
+    .bagian2 .gambar2 img{
+        margin: 0;
+        width: 70%;
     }
-    .bagian2 .aboutus h1{
-        color: #4C4C6D;
-        font-size: 90px;
-        display: none;
-    }
-    .bagian2 .aboutus span{
+
+    .bagian2 .gambar2 .kata {
         text-align: center;
-        color: rgb(44, 44, 44);
-        font-size: 15px;
-        font-weight: 800;
+        padding: 0;
+        width: 100%;
+        padding-top: 20px;
+        font-size: 4vw;
     }
     
     .bagian3{
@@ -627,7 +980,7 @@ input[type="submit"]:hover {
         position: relative;
         float: right;
         left: 25px;
-        top: 55px;
+        top: 50px;
         text-decoration: none;
         color: white;
     }
@@ -647,7 +1000,7 @@ input[type="submit"]:hover {
     .bagian3 ul .pilihan2 img{
         display: block;
         padding-top: 20px;
-        z-index: 20;
+        z-index: 2;
         max-width: 120px;
     }
     
@@ -665,7 +1018,7 @@ input[type="submit"]:hover {
         left: 135px;
         top: 10px;
         color: #FFE194;
-        z-index: 20;
+        z-index: 2;
     }
     .bagian3 ul .pilihan2 a{
         padding-top: 10px;
@@ -679,15 +1032,15 @@ input[type="submit"]:hover {
         position: relative;
         float: right;
         left: 25px;
-        top: 50px;
+        top: 43px;
         text-decoration: none;
         color: white;
     }
 
     .bagian4{
         width: 100vw;
-        height: 850px;
-        background-color: #4C4C6D;
+        height: auto;
+        background-color: #ffffff;
         background-image: none;
         background-repeat: no-repeat;
         background-size: 750px;
@@ -701,8 +1054,8 @@ input[type="submit"]:hover {
     }
     
     .bagian4 ul .bagian1{
-        width: 400px;
-        margin: 30px;
+        padding: 60px;
+        width: 100%;
         height: 600px;
         display: flex;
         flex-direction: column;
@@ -712,47 +1065,67 @@ input[type="submit"]:hover {
     .bagian4 ul .bagian1 .logo{
         padding-top: 20px;
         display: flex;
-        font-size: 40px;
+        font-size: 6vw;
         padding-bottom: 20px;
     }
     .bagian4 ul .bagian1  h1{
         color: #FFE194;
-        font-size: 30px;
+        font-size: 10vw;
         font-weight: 800;
     }
     .bagian4 ul .bagian1 span{
-        display: none;
-        width: 50vw;
+        display: block;
+        width: 100%;
         font-weight: 600;
-        color:white;
+        color:rgb(255, 255, 255);
+    }
+
+    .bagian4 ul .bagian2 span{
+        display: block;
+        width: 100%;
+        font-weight: 600;
+        color:rgb(255, 255, 255);
     }
     
+    .bagian4 {
+        background-color: #4C4C6D;
+        height: 1050px;
+    }
+
+    .bagian4 ul{
+        display: block;
+    }
+
     .bagian4 ul .bagian2{
-        margin: 20px;
+        padding: 0;
+        padding-top: 80px;
+        margin: 0;
         display: flex;
+        align-items: flex-start;
+        justify-content: start;
         flex-direction: column;
-        width: 25vw;
+        width: 100%;
     }
     
     .bagian4 ul .bagian2 li{
-        max-width: 155px;
-        padding-top: 20px;
-        font-size: 15px;
-        font-weight: 600;
-    }
-    
-    .bagian4 ul .bagian2 h1{
-        font-size: 50px;
-        font-weight: 900;
-    }
-    
-    .bagian12{
-        padding-top: 20px;
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 30%;
+        text-align: left;
+        font-size: 4vw;
+        font-weight: 600;
+        padding-left: 0;
+        margin: 10px;
     }
+
+    .bagian4 ul .bagian2 li i {
+        font-size: 5vw;
+    }
+
+    .bagian4 ul .bagian2 li span{
+        padding: 0;
+        padding-bottom: 20px;
+        padding-left: 20px;
+    }
+
     
     input[type="text"] {
         font-size: 20px;
