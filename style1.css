@@ -11,11 +11,17 @@ html {
 
 body {
     display: grid;
-    height: 100%;
+    height: auto;
     width: 100%;
     overflow-x: hidden;
     background-size: cover;
     background-color: #E8F6EF;
+}
+
+.bg {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
 }
 
 nav{
@@ -70,11 +76,24 @@ nav a{
     text-decoration: none;
 }
 
-.signlog a .login{
+#bg1{
+    display: none;
     width: 100%;
+}
+
+.signlog a .login{
     color: #E8F6EF;
     font-size: 15px;
     background-color: #1B9C85;
+    padding: 15px 25px;
+    border-radius: 40px;
+    transition: 0.5s ease-in;
+}
+
+.signlog a .login:hover{
+    color: #4C4C6D;
+    font-size: 15px;
+    background-color: #FFE194;
     padding: 15px 25px;
     border-radius: 40px;
 }
@@ -166,6 +185,7 @@ nav a{
 
 .rangrel {
     width: 100vw;
+    height: auto;
     display: flex;
     flex-direction: column;
 }
@@ -293,7 +313,7 @@ nav a{
 .rumkap span {
     text-align: center;
     padding-top: 20px;
-    font-size: 4vw;
+    font-size: 2vw;
     color: #1B9C85;
 }
 
@@ -376,6 +396,7 @@ nav a{
 }
 
 .raedi {
+    height: auto;
     padding: 30px;
     width: 100vw;
     display: flex;
@@ -433,6 +454,122 @@ nav a{
 
 .raedi .gambar3 img{
     width: 60%;
+}
+
+.bagian4{
+    width: 100vw;
+    height: 850px;
+    background-color: #4C4C6D;
+}
+
+.bagian4 ul{
+    list-style: none;
+}
+
+.bagian4 ul .bagian1{
+    padding: 100px;
+    margin: 0;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+}
+.bagian4 ul .bagian1 .logo{
+    font-size: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.bagian4 ul .bagian1 h1{
+    color: #FFE194;
+    font-size: 50px;
+    font-weight: 800;
+}
+.bagian4 ul .bagian1 span{
+    width: 50vw;
+    font-weight: 600;
+    color:white;
+    padding-bottom: 30px;
+}
+
+.bagian4 ul .bagian2{
+    padding-top: 100px;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.bagian4 ul .bagian2 li{
+    font-size: small;
+    font-size: 1.3vw;
+    font-weight: 600;
+    padding-left: 50px;
+}
+
+
+input[type="text"] {
+    font-size: 20px;
+    color: #323232;
+    height: 40px;
+    width: 70%;
+    padding: 20px ;
+    border: 1px solid rgba(204, 204, 204, 0);
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+input[type="text"]:hover {
+    font-size: 20px;
+    color: #323232;
+    height: 40px;
+    width: 70%;
+    padding: 20px ;
+    border: 1px solid rgba(204, 204, 204, 0);
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    width: 200px;
+    background-color: #FFE194;
+    color: rgb(48, 48, 48);
+    padding: 20px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 26px;
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+input[type="submit"]:hover {
+    background-color: #1B9C85;
+    color: #FFE194;
+}
+
+
+.bagian4 ul .bagian2 li span{
+    padding-left: 20px;
+}
+
+.ri-telegram-fill:hover{
+    color: #0088cc;
+}
+
+.ri-facebook-fill:hover{
+    color: #3b5998;
+}
+
+.ri-twitter-fill:hover{
+    color: #3b5998;
+}
+.ri-instagram-fill:hover{
+    color: 	#7232bd;
+}
+
+.ri-discord-fill:hover{
+    color: #7289da	;
 }
 
 
@@ -519,6 +656,21 @@ nav a{
     body{
         overflow-x: none;
     }
+    #bg1{
+        z-index: -1;
+        position: absolute;
+        display: block;
+        width: 100%;
+    }
+
+    .bg {
+        display: none;
+        position: absolute;
+        width: 100%;
+        z-index: -1;
+    }
+    
+
     nav {
         left: 0;
         position: fixed;
@@ -957,5 +1109,124 @@ nav a{
 
     .raedi .gambar3 img{
         width: 80%;
+    }
+    .bagian4{
+        width: 100vw;
+        height: auto;
+        background-color: #ffffff;
+        background-image: none;
+        background-repeat: no-repeat;
+        background-size: 750px;
+        background-position-x: 100%;
+    }
+    
+    .bagian4 ul{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+    }
+    
+    .bagian4 ul .bagian1{
+        padding: 60px;
+        width: 100%;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+    .bagian4 ul .bagian1 .logo{
+        padding-top: 20px;
+        display: flex;
+        font-size: 6vw;
+        padding-bottom: 20px;
+    }
+    .bagian4 ul .bagian1  h1{
+        color: #FFE194;
+        font-size: 10vw;
+        font-weight: 800;
+    }
+    .bagian4 ul .bagian1 span{
+        display: block;
+        width: 100%;
+        font-weight: 600;
+        color:rgb(255, 255, 255);
+    }
+
+    .bagian4 ul .bagian2 span{
+        display: block;
+        width: 100%;
+        font-weight: 600;
+        color:rgb(255, 255, 255);
+    }
+    
+    .bagian4 {
+        background-color: #4C4C6D;
+        height: 1050px;
+    }
+
+    .bagian4 ul{
+        display: block;
+    }
+
+    .bagian4 ul .bagian2{
+        padding: 0;
+        padding-top: 80px;
+        margin: 0;
+        display: flex;
+        align-items: flex-start;
+        justify-content: start;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .bagian4 ul .bagian2 li{
+        display: flex;
+        text-align: left;
+        font-size: 4vw;
+        font-weight: 600;
+        padding-left: 0;
+        margin: 10px;
+    }
+
+    .bagian4 ul .bagian2 li i {
+        font-size: 5vw;
+    }
+
+    .bagian4 ul .bagian2 li span{
+        padding: 0;
+        padding-bottom: 20px;
+        padding-left: 20px;
+    }
+
+    
+    input[type="text"] {
+        font-size: 20px;
+        color: #323232;
+        height: 40px;
+        width: 85%;
+        padding: 20px ;
+        border: 1px solid rgba(204, 204, 204, 0);
+        background-color: #ffffff;
+        border-radius: 20px;
+        box-sizing: border-box;
+    }
+    
+    input[type="submit"] {
+        width: 100%;
+        background-color: #FFE194;
+        color: rgb(48, 48, 48);
+        padding: 10px 0px;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        font-size: 5vw;
+        font-weight: 700;
+        transition: 0.5s;
+    }
+    
+    input[type="submit"]:hover {
+        background-color: #1B9C85;
+        color: #FFE194;
     }
 }
