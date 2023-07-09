@@ -44,16 +44,11 @@ function showQuestion(){
     imgPertama.style.display = "none";
 
     if(questionNo == 1){
-       rumusPler.src ="jawab1.png";
+       rumusPler.src ="jawab3.png";
       }
-      else if(questionNo == 2){
-        rumusPler.src ="jawab2.png";
-    }
-    else if(questionNo == 3){
-        rumusPler.src ="jawab3.png";
-    }else{
+      else {
         rumusPler.src ="jawab4.png";
-    }
+      }
 
     if(questionNo == 1){
         document.getElementById("serahlo").src="soal12.png";
