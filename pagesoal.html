@@ -9,17 +9,16 @@
     <link rel="stylesheet"
     href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <title>Document</title>
-    <title>Document</title>
 </head>
 <body>
-    <a href="#" class="logo"><img src="logo.png"></a>
+    <a href="index.html" class="logo"><img src="logo.png"></a>
     <nav id="nav" style="background-color: rgba(255, 255, 255, 0);">
         <a href="#" class="learn">LEARN</a>
         <div class="nav1" id="nav1">
-            <li><a href="#bagian1">Home</a> </li>
-            <li><a href="#bagian2">About</a> </li>
-            <li><a href="#bagian3">Materi</a> </li>
-            <li><a href="#bagian4">Contact</a> </li>
+            <li><a href="index.html">Home</a> </li>
+            <li><a href="index.html">About</a> </li>
+            <li><a href="index.html">Materi</a> </li>
+            <li><a href="index.html">Contact</a> </li>
         </div>
         <div class="signlog">
             <a href="dasboard.html"><div class="signup">Sign Up</div></a></li>
@@ -171,6 +170,37 @@
             <img src="komponen arus.png">
         </div>
     </div>
+    <div class="bagian4" id="bagian4">
+        <ul>
+            <div class="bagian1">
+                    <h1>CONTACT US</h1>
+                    <div class="logo">
+                        <i class="ri-telegram-fill"></i>
+                        <i class="ri-facebook-fill"></i>
+                        <i class="ri-twitter-fill"></i>
+                        <i class="ri-instagram-fill"></i>
+                        <i class="ri-discord-fill"></i>
+                    </div>
+                    <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                        Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, 
+                        purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. 
+                        Fusce est. Vivamus a tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada 
+                        fames ac turpis egestas.</span>
+                    <div class="isian">
+                        <li><input type="text" id="nama" name="nama" class="inputan" value="Nama"><br><br></li>
+                        <li><input type="text" id="email" name="emmail" class="inputan2" value="email"><br><br></li>
+                        <li><input type="text" id="massage" name="massage" class="inputan3" value="massage"><br><br></li>
+                        <input type="submit" value="SEND">
+                    </div>
+
+            <div class="bagian2">
+                <li><i class="ri-mail-fill"></i><span id="mail">cs@learnservice.com</span></li>
+                <li><i class="ri-phone-fill"></i><span id="telpon">(021) 78940234</span></li>
+                <li><i class="ri-building-fill"></i><span id="gedung">jl.Cut mutia no 14</span></li>
+                <li><i class="ri-time-fill"></i><span id="jam">08.00 - 20-00</span></li>
+            </div>
+        </ul>
+    </div>
 
     <script>
         let menu = document.querySelector('#menu');
@@ -181,16 +211,16 @@
             navbar.classList.toggle('open');
         }
     
-        let bg = document.getElementById("bg1");
-        let pg1 = document.getElementById("pg1");
+        let bg = document.getElementById("bg");
+        let bg1 = document.getElementById("bg1");
         let bg3 = document.getElementById("bg3");
         let navBG = document.getElementById("nav");
         window.addEventListener('scroll',function(){
                 let value = window.scrollY;
                 console.log(value);
-                //pg1.style.left = value * 0.4 + 'px';
-                //bg1.style.top = value * 0.2 + "px";
-                //bg3.style.right = (value * 0.5)-300 + "px";
+                //bg1.style.top = value * 1 + 'px';
+                //bg.style.top = value * 0.8 + "px";
+                //bg1.style.right = (value * 0.5)-300 + "px";
                 navBG.style.backdropFilter = "blur(" + ((value*0.007 > 6)? 6 : (value*0.007)) + "px)";
                 //navBG.style.backgroundColor = "RGBA(255,255,255," + ((value*0.007 > 0.8)? 0.8 : (value*0.07)) + ")";
             })
