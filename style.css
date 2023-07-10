@@ -776,8 +776,8 @@ input[type="submit"]:hover {
         position: absolute;
         top: 100%;
         right: -100%;
-        width: 50vh;
-        height: 60vh;
+        width: 200px;
+        height: 250px;
         background-color: #28b399;
         align-items: center;
         display: flex;
@@ -949,7 +949,7 @@ input[type="submit"]:hover {
     .bagian3 ul .pilihan1 img{
         display: block;
         padding-top: 20px;
-        z-index: 20;
+        z-index: 1;
         max-width: 120px;
     }
     .bagian3 ul .pilihan1:hover{
