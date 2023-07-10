@@ -158,12 +158,12 @@ nav a{
 }
 
 .container1 .h2{
-    padding-top: 60px;
+    padding-top: 40px;
     padding-bottom: 50px;
 }
 .container1 .h2 span{
     font-size: 2vw;
-    font-weight:550;
+    font-weight:450;
 }
 .container1 .moreinfo{
     font-size: 30px;
@@ -883,7 +883,7 @@ input[type="submit"]:hover {
         width: 100vw;
     }
     .bagian2 #ab1{
-        font-size: 15vw;
+        font-size: 12vw;
         font-weight: 800;
     }
 
