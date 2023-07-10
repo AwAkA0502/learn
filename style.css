@@ -146,15 +146,15 @@ nav a{
 
 .container1{
     width: 100%;
-    padding-left: 60px;
-    padding-top: 100px;
+    padding-left: 80px;
+    padding-top: 150px;
     margin: 0;
 }
 
 .container1 h1{
     color: rgb(44, 44, 44) ;
     font-size: 5vw;
-    font-weight:900;
+    font-weight:1000;
 }
 
 .container1 .h2{
@@ -221,8 +221,9 @@ nav a{
 }
 
 #ab1{
+    font-weight: 800;
     font-size: 8vw;
-    color: #323232;
+    color: #4C4C6D;
 }
 
 .bagian3{
