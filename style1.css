@@ -133,6 +133,7 @@ nav a{
 }
 
 .hambatan h1 {
+    color: #4C4C6D;
     text-align: center;
     font-size: 6vw;
 }
@@ -141,7 +142,7 @@ nav a{
     text-align: center;
     font-size: 2vw;
     font-weight: 500;
-    padding: 30px;
+    padding: 30px 100px;
 }
 
 .rangse {
@@ -159,6 +160,7 @@ nav a{
 }
 .rangse .rurangse h1{
     font-size: 4vw;
+    color: #4C4C6D;
 }
 .rangse .rurangse ul{
     padding: 20px;
@@ -197,6 +199,7 @@ nav a{
     align-items: center;
 }
 .rangrel .rurangrel h1 {
+    color: #4C4C6D;
     text-align: center;
     font-size: 4vw;
     font-weight: 800;
@@ -332,6 +335,7 @@ nav a{
     padding: 80px;
     width: 100vw;
     margin-top: 30px;
+    padding-bottom: 0;
     display: flex;
     flex-direction: column;
     align-items: center ;
@@ -1135,6 +1139,7 @@ input[type="submit"]:hover {
 
     .jendie ol {
         padding: 50px;
+        padding-bottom: 0;
     }
 
     .jendie ol li{
@@ -1156,7 +1161,8 @@ input[type="submit"]:hover {
     
     .raedi h1{
         text-align: center;
-        font-size: 7vw;
+        font-size: 6vw;
+        font-weight: 800;
         color: #4C4C6D;
     }
     
