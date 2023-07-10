@@ -776,7 +776,7 @@ input[type="submit"]:hover {
         top: 100%;
         right: -100%;
         width: 200px;
-        height: 60vh;
+        height: 250px;
         background-color: #1B9C85;
         align-items: center;
         display: flex;
@@ -950,6 +950,7 @@ input[type="submit"]:hover {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 0px 50px;
     }
     
     .pengarus h1 {
@@ -959,7 +960,7 @@ input[type="submit"]:hover {
         color: #4C4C6D;
     }
     .pengarus span {
-        padding: 30px;
+        padding: 20px 0px;
         text-align: justify;
         font-size: 20px;
         font-weight: 600;
@@ -973,6 +974,7 @@ input[type="submit"]:hover {
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 0 20px;
     }
     
     .pengkapa h1 {
@@ -982,7 +984,7 @@ input[type="submit"]:hover {
     }
     
     .pengkapa span{
-        padding: 30px;
+        padding: 18px;
         text-align: justify;
         font-size: 20px;
         font-weight: 600;
@@ -1070,6 +1072,7 @@ input[type="submit"]:hover {
     .pengdie {
         width: 100vw;
         margin-top: 30px;
+        padding: 0;
         display: flex;
         flex-direction: column;
         align-items: center ;
@@ -1082,7 +1085,7 @@ input[type="submit"]:hover {
     }
     
     .pengdie span{
-        text-align: center;
+        text-align: start;
         padding: 30px;
         font-size: 4vw;
         font-weight: 600;
@@ -1101,7 +1104,7 @@ input[type="submit"]:hover {
     
     .kardie h1{
         text-align: center;
-        font-size: 10vw;
+        font-size: 6vw;
         color: #4C4C6D;
     }
     
@@ -1126,7 +1129,7 @@ input[type="submit"]:hover {
     }
     
     .jendie h1{
-        font-size: 10vw;
+        font-size: 8vw;
         color: #4C4C6D;
     }
 
